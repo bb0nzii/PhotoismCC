@@ -98,12 +98,11 @@ a {
 }
 .nav-container .top-nav .menu-toggle {
   position: fixed;
-  border: 1px solid white;
-  right: 2%;
+  right: 5%;
   font-size: 36px;
   color: white;
   cursor: pointer;
-  line-height: 80px;
+  line-height: 60px;
   z-index: 9999;
 }
 .nav-container .top-nav .top-navbar {
@@ -142,8 +141,11 @@ a {
     height: 100vh;
     width: 100vw;
     background: rgba(0, 0, 0, 0.8);
-    padding-top: 80px;
     transform: translateX(100%);
+  }
+  .nav-container .top-nav .top-navbar li a {
+    line-height: 80px;
+    font-size: 18px;
   }
   .nav-container .top-nav .top-navbar.active {
     transform: translateX(0);
