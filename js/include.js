@@ -344,25 +344,19 @@ function includeHTML(callback) {
 includeHTML(() => {
   const script = document.createElement("script");
 
-  // GitHub Pages 감지
   const isGithubPages = window.location.hostname.includes("github.io");
 
   if (isGithubPages) {
-    // GitHub Pages 절대 URL
-    script.src = "https://bb0nzii.github.io/PhotoismCC/js/header.js";
+    // GitHub Pages에서 레포 기준 절대 경로
+    script.src = "/PhotoismCC/js/header.js";
   } else {
-    // 로컬 환경: 현재 HTML 위치 기준 상대경로
+    // 로컬 서버
     const pathParts = window.location.pathname.split("/");
-    pathParts.pop(); // 파일명 제거
+    pathParts.pop();
     let pathPrefix = pathParts.map(() => "../").join("");
     if (pathPrefix === "") pathPrefix = "./";
     script.src = pathPrefix + "js/header.js";
   }
-
-  // 로드 완료 시 콘솔 확인
-  script.addEventListener("load", () => {
-    console.log("✅ header.js loaded & ready");
-  });
 
   document.body.appendChild(script);
 });
