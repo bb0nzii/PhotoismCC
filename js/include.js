@@ -1,37 +1,29 @@
-function includeHTML(callback) {
-  const elements = document.querySelectorAll('[w3-include-html]');
-  let remaining = elements.length;
-
-  if (remaining === 0) {
-    if (typeof callback === 'function') callback();
-    return;
-  }
-
+function includeHTML() {
+  const elements = document.querySelectorAll("[w3-include-html]");
   elements.forEach(el => {
     const file = el.getAttribute("w3-include-html");
-    if (!file) {
-      remaining--;
-      if (remaining === 0 && typeof callback === 'function') callback();
-      return;
-    }
+    if (file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          el.innerHTML = data;
 
-    fetch(file)
-      .then(response => {
-        if (!response.ok) throw new Error("Page not found");
-        return response.text();
-      })
-      .then(data => {
-        el.innerHTML = data;
-        el.removeAttribute("w3-include-html");
-      })
-      .catch(error => {
-        el.innerHTML = "Include failed.";
-        console.error(error);
-      })
-      .finally(() => {
-        remaining--;
-        if (remaining === 0 && typeof callback === 'function') callback();
-      });
+          // ✅ header.js 같은 스크립트 태그 실행시키기
+          const scripts = el.querySelectorAll("script");
+          scripts.forEach(oldScript => {
+            const newScript = document.createElement("script");
+            if (oldScript.src) {
+              newScript.src = oldScript.src; // 외부 js
+            } else {
+              newScript.textContent = oldScript.textContent; // inline js
+            }
+            document.body.appendChild(newScript);
+          });
+        })
+        .catch(err => {
+          el.innerHTML = "Page not found.";
+        });
+    }
   });
 }
 

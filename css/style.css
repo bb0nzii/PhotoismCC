@@ -88,6 +88,11 @@ a {
   background-color: var(--color-photoism-darkgrey);
 }
 
+@media screen and (max-width: 768px) {
+  .nav-include {
+    height: 60px;
+  }
+}
 .nav-container {
   width: 100vw;
   height: 150px;
@@ -102,7 +107,7 @@ a {
   font-size: 36px;
   color: white;
   cursor: pointer;
-  line-height: 60px;
+  line-height: 50px;
   z-index: 9999;
 }
 .nav-container .top-nav .top-navbar {

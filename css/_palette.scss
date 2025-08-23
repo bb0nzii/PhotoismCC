@@ -20,3 +20,4 @@
 
 // -- And so on
 .nav-include{width: 100vw; height: 150px; background-color: var(--color-photoism-darkgrey);}
+@media screen and (max-width: 768px) {.nav-include{height: 60px;}}
