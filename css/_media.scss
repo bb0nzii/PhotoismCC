@@ -1,0 +1,35 @@
+// -- main
+@media screen and (max-width: 768px) {
+body{
+    .main-container{
+        .main-bg-container{
+            .main-textbox{
+                .main-text-title{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .main-text-sub{
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+
+                .main-icon-container{
+                    column-gap: 10px;
+
+                    li{
+                        a{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+
+                .main-copy{
+                    font-size: 10px;
+                }
+            } //main-textbox
+        } //main-bg-container
+    } //main-container
+} //body
+}

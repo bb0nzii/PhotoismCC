@@ -200,4 +200,26 @@ body .main-container .main-bg-container .main-textbox .main-copy {
 body .main-container .main-bg-container .main-textbox .main-copy .main-copyright {
   display: block;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  body .main-container .main-bg-container .main-textbox .main-text-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  body .main-container .main-bg-container .main-textbox .main-text-sub {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  body .main-container .main-bg-container .main-textbox .main-icon-container {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  body .main-container .main-bg-container .main-textbox .main-icon-container li a {
+    width: 20px;
+    height: 20px;
+  }
+  body .main-container .main-bg-container .main-textbox .main-copy {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
