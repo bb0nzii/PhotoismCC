@@ -282,16 +282,8 @@ function includeHTML(callback) {
 
 // ✅ include 완료 후 바로 이벤트 등록
 includeHTML(() => {
-  const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".top-navbar");
-
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("active");
-      console.log("👉 메뉴 토글 클릭됨");
-    });
-    console.log("✅ header loaded & event bound");
-  } else {
-    console.error("❌ menu-toggle 또는 top-navbar를 찾을 수 없음");
-  }
+  // header DOM 삽입 완료 후 실행
+  const script = document.createElement("script");
+  script.src = "/js/header.js"; // GitHub Pages든 로컬이든 이 경로만 맞으면 됨
+  document.body.appendChild(script);
 });
