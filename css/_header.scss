@@ -10,13 +10,12 @@
 
         .menu-toggle {
           position: fixed;
-          // border: 1px solid white;
-          right: 0;
-          font-size: 48px;
+          border: 1px solid white;
+          right: 2%;
+          font-size: 36px;
           color: white;
           cursor: pointer;
-          line-height: 50px;
-          padding: 0 20px;
+          line-height: 80px;
           z-index: 9999;
         }
 
