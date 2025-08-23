@@ -1,38 +1,38 @@
-// function includeHTML() {
-//   const elements = document.querySelectorAll("[w3-include-html]");
-//   elements.forEach(el => {
-//     const file = el.getAttribute("w3-include-html");
-//     if (file) {
-//       fetch(file)
-//         .then(response => response.text())
-//         .then(data => {
-//           el.innerHTML = data;
+function includeHTML() {
+  const elements = document.querySelectorAll("[w3-include-html]");
+  elements.forEach(el => {
+    const file = el.getAttribute("w3-include-html");
+    if (file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          el.innerHTML = data;
 
-//           // ✅ header.js 같은 스크립트 태그 실행시키기
-//           const scripts = el.querySelectorAll("script");
-//           scripts.forEach(oldScript => {
-//             const newScript = document.createElement("script");
-//             if (oldScript.src) {
-//               newScript.src = oldScript.src; // 외부 js
-//             } else {
-//               newScript.textContent = oldScript.textContent; // inline js
-//             }
-//             document.body.appendChild(newScript);
-//           });
-//         })
-//         .catch(err => {
-//           el.innerHTML = "Page not found.";
-//         });
-//     }
-//   });
-// }
+          // ✅ header.js 같은 스크립트 태그 실행시키기
+          const scripts = el.querySelectorAll("script");
+          scripts.forEach(oldScript => {
+            const newScript = document.createElement("script");
+            if (oldScript.src) {
+              newScript.src = oldScript.src; // 외부 js
+            } else {
+              newScript.textContent = oldScript.textContent; // inline js
+            }
+            document.body.appendChild(newScript);
+          });
+        })
+        .catch(err => {
+          el.innerHTML = "Page not found.";
+        });
+    }
+  });
+}
 
-// // include 끝난 뒤 header.js 실행
-// includeHTML(() => {
-//   const script = document.createElement("script");
-//   script.src = "./js/header.js";
-//   document.body.appendChild(script);
-// });
+// include 끝난 뒤 header.js 실행
+includeHTML(() => {
+  const script = document.createElement("script");
+  script.src = "./js/header.js";
+  document.body.appendChild(script);
+});
 
 
 
@@ -92,61 +92,118 @@
 
 
 
-//test3
-function includeHTML(callback) {
-  const elements = document.querySelectorAll("[w3-include-html]");
-  let loadedCount = 0;
-  const total = elements.length;
+// //test3
+// function includeHTML(callback) {
+//   const elements = document.querySelectorAll("[w3-include-html]");
+//   let loadedCount = 0;
+//   const total = elements.length;
 
-  if (total === 0) {
-    if (callback) callback();
-    return;
-  }
+//   if (total === 0) {
+//     if (callback) callback();
+//     return;
+//   }
 
-  elements.forEach(el => {
-    const file = el.getAttribute("w3-include-html");
-    if (file) {
-      fetch(file)
-        .then(response => response.text())
-        .then(data => {
-          el.innerHTML = data;
+//   elements.forEach(el => {
+//     const file = el.getAttribute("w3-include-html");
+//     if (file) {
+//       fetch(file)
+//         .then(response => response.text())
+//         .then(data => {
+//           el.innerHTML = data;
 
-          // include된 HTML 안의 <script> 실행
-          const scripts = el.querySelectorAll("script");
-          scripts.forEach(oldScript => {
-            const newScript = document.createElement("script");
-            if (oldScript.src) {
-              newScript.src = oldScript.src;
-            } else {
-              newScript.textContent = oldScript.textContent;
-            }
-            document.body.appendChild(newScript);
-          });
+//           // include된 HTML 안의 <script> 실행
+//           const scripts = el.querySelectorAll("script");
+//           scripts.forEach(oldScript => {
+//             const newScript = document.createElement("script");
+//             if (oldScript.src) {
+//               newScript.src = oldScript.src;
+//             } else {
+//               newScript.textContent = oldScript.textContent;
+//             }
+//             document.body.appendChild(newScript);
+//           });
 
-        })
-        .catch(err => {
-          el.innerHTML = "Page not found.";
-        })
-        .finally(() => {
-          loadedCount++;
-          if (loadedCount === total && typeof callback === "function") {
-            callback();
-          }
-        });
-    }
-  });
-}
+//         })
+//         .catch(err => {
+//           el.innerHTML = "Page not found.";
+//         })
+//         .finally(() => {
+//           loadedCount++;
+//           if (loadedCount === total && typeof callback === "function") {
+//             callback();
+//           }
+//         });
+//     }
+//   });
+// }
 
-// ✅ include 완료 후 header.js 자동 추가
-includeHTML(() => {
-  // 현재 페이지 URL 기준으로 header.js 위치 계산
-  // 예: /sub/takeover-1.html → ../js/header.js
-  let pathPrefix = "";
-  const pathDepth = window.location.pathname.split("/").length - 2; 
-  // -2: 첫 /와 파일명 제외
-  for (let i = 0; i < pathDepth; i++) pathPrefix += "../";
+// // ✅ include 완료 후 header.js 자동 추가
+// includeHTML(() => {
+//   const script = document.createElement("script");
+//   script.src = "/PhotosimCC/js/header.js"; // repo 기준 절대경로
+//   document.body.appendChild(script);
+// });
 
-  const script = document.createElement("script");
-  script.src = pathPrefix + "js/header.js";
-  document.body.appendChild(script);
-});
+
+
+
+// //test4
+// function includeHTML(callback) {
+//   const elements = document.querySelectorAll("[w3-include-html]");
+//   let loadedCount = 0;
+//   const total = elements.length;
+
+//   if (total === 0) {
+//     if (callback) callback();
+//     return;
+//   }
+
+//   elements.forEach(el => {
+//     const file = el.getAttribute("w3-include-html");
+//     if (file) {
+//       fetch(file)
+//         .then(response => response.text())
+//         .then(data => {
+//           el.innerHTML = data;
+
+//           // include된 HTML 안의 <script> 실행
+//           const scripts = el.querySelectorAll("script");
+//           scripts.forEach(oldScript => {
+//             const newScript = document.createElement("script");
+//             if (oldScript.src) {
+//               newScript.src = oldScript.src;
+//             } else {
+//               newScript.textContent = oldScript.textContent;
+//             }
+//             document.body.appendChild(newScript);
+//           });
+//         })
+//         .catch(err => {
+//           el.innerHTML = "Page not found.";
+//         })
+//         .finally(() => {
+//           loadedCount++;
+//           if (loadedCount === total && typeof callback === "function") {
+//             callback();
+//           }
+//         });
+//     }
+//   });
+// }
+
+// // ✅ include 완료 후 header.js 자동 추가 (GitHub Pages 레포 이름 기준)
+// includeHTML(() => {
+//   const script = document.createElement("script");
+
+//   // 경로 결정
+//   const isGithubPages = window.location.hostname.includes("github.io");
+//   if (isGithubPages) {
+//     // GitHub Pages: username.github.io/PhotosimCC/
+//     script.src = "/PhotosimCC/js/header.js";
+//   } else {
+//     // 로컬 Live Server
+//     script.src = "./js/header.js";
+//   }
+
+//   document.body.appendChild(script);
+// });
