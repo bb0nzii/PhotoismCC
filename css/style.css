@@ -98,11 +98,11 @@ a {
 }
 .nav-container .top-nav .menu-toggle {
   position: fixed;
-  right: 32px;
+  right: 0;
   font-size: 48px;
   color: white;
   cursor: pointer;
-  line-height: 150px;
+  line-height: 50px;
   padding: 0 20px;
   z-index: 9999;
 }
@@ -167,12 +167,12 @@ body .main-container .main-bg-container .main-textbox {
 body .main-container .main-bg-container .main-textbox .main-text-title {
   font-size: 48px;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 body .main-container .main-bg-container .main-textbox .main-text-sub {
   font-size: 24px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 body .main-container .main-bg-container .main-textbox .main-icon-container {
   display: flex;
