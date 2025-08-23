@@ -1,0 +1,17 @@
+html, html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Pretendard, sans-serif;
+    color: var(--color-photoism-darkgrey);
+}
+
+ul, ol, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}

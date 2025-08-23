@@ -1,0 +1,22 @@
+// -- Color
+:root{
+    --color-photoism-darkgrey: #2B292A;
+    --color-photoism-pink: #F48E8C;
+}
+
+.bg-darkgrey{background-color: var(--color-photoism-darkgrey) !important;}
+.bg-pink{background-color: var(--color-photoism-pink) !important;}
+
+.text-pink{color: var(--color-photoism-pink) !important;}
+
+
+
+// -- Img
+.icon-blog{background: url(../src/icon/icon-blog.svg) no-repeat center center/cover;}
+.icon-instagram{background: url(../src/icon/icon-instagram.svg) no-repeat center center/cover;}
+.icon-kakao{background: url(../src/icon/icon-kakao.svg) no-repeat center center/cover;}
+
+
+
+// -- And so on
+.nav-include{width: 100vw; height: 150px; background-color: var(--color-photoism-darkgrey);}

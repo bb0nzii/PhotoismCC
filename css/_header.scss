@@ -1,0 +1,79 @@
+.nav-container{
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .top-nav{
+
+        .menu-toggle {
+            position: fixed;
+            right: 32px;
+            font-size: 48px;
+            color: white;
+            cursor: pointer;
+            line-height: 150px;
+            padding: 0 20px;
+            z-index: 9999;
+        }
+
+        .top-navbar{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+
+            li{
+                width: 300px;
+                // border: 1px solid white;
+
+                a{
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    font-size: 24px;
+                    line-height: 150px;
+                    text-shadow: 0 0 50px rgba(0,0,0,0.1);
+
+                    &:hover{
+                        color: var(--color-photoism-pink);
+                    }
+                }
+            }
+        } //main-navbar
+    } //main-nav
+} //main-nav-container
+
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    height: 60px; // 모바일에서 nav 높이 줄임
+
+    .top-nav {
+      .top-navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0,0,0,0.8);
+        padding-top: 80px;
+        transform: translateX(100%); // 처음에는 화면 밖
+      }
+
+      .top-navbar.active {
+        transform: translateX(0); // 열릴 때
+      }
+
+      .menu-toggle {
+        display: block; // 버튼 표시
+      }
+    }
+  }
+}

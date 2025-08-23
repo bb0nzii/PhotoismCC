@@ -1,0 +1,201 @@
+@import url("https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css");
+html, html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Pretendard, sans-serif;
+  color: var(--color-photoism-darkgrey);
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pre-t {
+  font-weight: 100;
+}
+
+.pre-el {
+  font-weight: 200;
+}
+
+.pre-l {
+  font-weight: 300;
+}
+
+.pre-r {
+  font-weight: 400;
+}
+
+.pre-m {
+  font-weight: 500;
+}
+
+.pre-sb {
+  font-weight: 600;
+}
+
+.pre-b {
+  font-weight: 700;
+}
+
+.pre-eb {
+  font-weight: 800;
+}
+
+.pre-k {
+  font-weight: 900;
+}
+
+:root {
+  --color-photoism-darkgrey: #2B292A;
+  --color-photoism-pink: #F48E8C;
+}
+
+.bg-darkgrey {
+  background-color: var(--color-photoism-darkgrey) !important;
+}
+
+.bg-pink {
+  background-color: var(--color-photoism-pink) !important;
+}
+
+.text-pink {
+  color: var(--color-photoism-pink) !important;
+}
+
+.icon-blog {
+  background: url(../src/icon/icon-blog.svg) no-repeat center center/cover;
+}
+
+.icon-instagram {
+  background: url(../src/icon/icon-instagram.svg) no-repeat center center/cover;
+}
+
+.icon-kakao {
+  background: url(../src/icon/icon-kakao.svg) no-repeat center center/cover;
+}
+
+.nav-include {
+  width: 100vw;
+  height: 150px;
+  background-color: var(--color-photoism-darkgrey);
+}
+
+.nav-container {
+  width: 100vw;
+  height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.nav-container .top-nav .menu-toggle {
+  position: fixed;
+  right: 32px;
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+  line-height: 150px;
+  padding: 0 20px;
+  z-index: 9999;
+}
+.nav-container .top-nav .top-navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+.nav-container .top-nav .top-navbar li {
+  width: 300px;
+}
+.nav-container .top-nav .top-navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  line-height: 150px;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+.nav-container .top-nav .top-navbar li a:hover {
+  color: var(--color-photoism-pink);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    height: 60px;
+  }
+  .nav-container .top-nav .top-navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 80px;
+    transform: translateX(100%);
+  }
+  .nav-container .top-nav .top-navbar.active {
+    transform: translateX(0);
+  }
+  .nav-container .top-nav .menu-toggle {
+    display: block;
+  }
+}
+body .main-container .main-bg-container {
+  width: 100vw;
+  height: 100vh;
+  background: url(../src/img/main-bg.jpg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+}
+body .main-container .main-bg-container .main-textbox {
+  width: 100vw;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+body .main-container .main-bg-container .main-textbox .main-text-title {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 10px;
+}
+body .main-container .main-bg-container .main-textbox .main-text-sub {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+body .main-container .main-bg-container .main-textbox .main-icon-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+body .main-container .main-bg-container .main-textbox .main-icon-container li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+body .main-container .main-bg-container .main-textbox .main-copy {
+  width: 100vw;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: white;
+  position: fixed;
+  bottom: 2%;
+}
+body .main-container .main-bg-container .main-textbox .main-copy .main-copyright {
+  display: block;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
