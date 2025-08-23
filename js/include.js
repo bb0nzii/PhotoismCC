@@ -241,6 +241,62 @@
 
 
 // 테스트 다시4
+// function includeHTML(callback) {
+//   const elements = document.querySelectorAll("[w3-include-html]");
+//   let loadedCount = 0;
+//   const total = elements.length;
+
+//   if (total === 0) {
+//     if (callback) callback();
+//     return;
+//   }
+
+//   elements.forEach(el => {
+//     const file = el.getAttribute("w3-include-html");
+//     if (!file) {
+//       loadedCount++;
+//       if (loadedCount === total && typeof callback === "function") callback();
+//       return;
+//     }
+
+//     fetch(file)
+//       .then(response => {
+//         if (!response.ok) throw new Error("Page not found");
+//         return response.text();
+//       })
+//       .then(data => {
+//         el.innerHTML = data;
+//       })
+//       .catch(err => {
+//         el.innerHTML = "Include failed.";
+//         console.error(err);
+//       })
+//       .finally(() => {
+//         loadedCount++;
+//         if (loadedCount === total && typeof callback === "function") {
+//           callback();
+//         }
+//       });
+//   });
+// }
+
+// // ✅ include 완료 후 바로 이벤트 등록
+// includeHTML(() => {
+//   // header DOM 삽입 완료 후 실행
+//   const script = document.createElement("script");
+//   script.src = "/js/header.js"; // GitHub Pages든 로컬이든 이 경로만 맞으면 됨
+//   document.body.appendChild(script);
+// });
+
+
+
+
+//테스트 다시5
+/**
+ * 공통 HTML include
+ * w3-include-html 속성이 있는 요소를 fetch로 가져와 삽입
+ * include 완료 후 callback 실행
+ */
 function includeHTML(callback) {
   const elements = document.querySelectorAll("[w3-include-html]");
   let loadedCount = 0;
@@ -261,7 +317,7 @@ function includeHTML(callback) {
 
     fetch(file)
       .then(response => {
-        if (!response.ok) throw new Error("Page not found");
+        if (!response.ok) throw new Error("Page not found: " + file);
         return response.text();
       })
       .then(data => {
@@ -280,10 +336,33 @@ function includeHTML(callback) {
   });
 }
 
-// ✅ include 완료 후 바로 이벤트 등록
+/**
+ * includeHTML 완료 후 header.js 로드
+ * - GitHub Pages와 로컬 서버 모두 대응
+ * - header.html DOM이 완전히 삽입된 이후 실행
+ */
 includeHTML(() => {
-  // header DOM 삽입 완료 후 실행
   const script = document.createElement("script");
-  script.src = "/js/header.js"; // GitHub Pages든 로컬이든 이 경로만 맞으면 됨
+
+  // GitHub Pages 감지
+  const isGithubPages = window.location.hostname.includes("github.io");
+
+  if (isGithubPages) {
+    // GitHub Pages 절대 URL
+    script.src = "https://bb0nzii.github.io/PhotoismCC/js/header.js";
+  } else {
+    // 로컬 환경: 현재 HTML 위치 기준 상대경로
+    const pathParts = window.location.pathname.split("/");
+    pathParts.pop(); // 파일명 제거
+    let pathPrefix = pathParts.map(() => "../").join("");
+    if (pathPrefix === "") pathPrefix = "./";
+    script.src = pathPrefix + "js/header.js";
+  }
+
+  // 로드 완료 시 콘솔 확인
+  script.addEventListener("load", () => {
+    console.log("✅ header.js loaded & ready");
+  });
+
   document.body.appendChild(script);
 });
