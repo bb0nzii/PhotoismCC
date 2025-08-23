@@ -110,6 +110,70 @@
 
 
 //테스트 다시2
+// function includeHTML(callback) {
+//   const elements = document.querySelectorAll("[w3-include-html]");
+//   let loadedCount = 0;
+//   const total = elements.length;
+
+//   if (total === 0) {
+//     if (callback) callback();
+//     return;
+//   }
+
+//   elements.forEach(el => {
+//     const file = el.getAttribute("w3-include-html");
+//     if (file) {
+//       fetch(file)
+//         .then(response => {
+//           if (!response.ok) throw new Error("Page not found");
+//           return response.text();
+//         })
+//         .then(data => {
+//           el.innerHTML = data;
+//         })
+//         .catch(err => {
+//           el.innerHTML = "Page not found.";
+//           console.error(err);
+//         })
+//         .finally(() => {
+//           loadedCount++;
+//           if (loadedCount === total && typeof callback === "function") {
+//             callback();
+//           }
+//         });
+//     }
+//   });
+// }
+
+// // include 완료 후 header.js 자동 추가
+// includeHTML(() => {
+//   const script = document.createElement("script");
+
+//   const isGithubPages = window.location.hostname.includes("github.io");
+
+//   if (isGithubPages) {
+//     // GitHub raw 링크 절대경로
+//     script.src = "https://raw.githubusercontent.com/bb0nzii/PhotoismCC/main/js/header.js";
+//   } else {
+//     // 로컬 환경: 현재 HTML 위치 기준 상대경로 계산
+//     const pathParts = window.location.pathname.split("/");
+//     pathParts.pop(); // 파일명 제거
+//     let pathPrefix = pathParts.map(() => "../").join("");
+//     if (pathPrefix === "") pathPrefix = "./";
+//     script.src = pathPrefix + "js/header.js";
+//   }
+
+//   // DOM이 준비된 후 load 이벤트 실행
+//   script.addEventListener("load", () => {
+//     console.log("✅ header.js loaded");
+//   });
+
+//   document.body.appendChild(script);
+// });
+
+
+
+//테스트 다시3
 function includeHTML(callback) {
   const elements = document.querySelectorAll("[w3-include-html]");
   let loadedCount = 0;
@@ -122,38 +186,42 @@ function includeHTML(callback) {
 
   elements.forEach(el => {
     const file = el.getAttribute("w3-include-html");
-    if (file) {
-      fetch(file)
-        .then(response => {
-          if (!response.ok) throw new Error("Page not found");
-          return response.text();
-        })
-        .then(data => {
-          el.innerHTML = data;
-        })
-        .catch(err => {
-          el.innerHTML = "Page not found.";
-          console.error(err);
-        })
-        .finally(() => {
-          loadedCount++;
-          if (loadedCount === total && typeof callback === "function") {
-            callback();
-          }
-        });
+    if (!file) {
+      loadedCount++;
+      if (loadedCount === total && typeof callback === "function") callback();
+      return;
     }
+
+    fetch(file)
+      .then(response => {
+        if (!response.ok) throw new Error("Page not found");
+        return response.text();
+      })
+      .then(data => {
+        el.innerHTML = data;
+      })
+      .catch(err => {
+        el.innerHTML = "Include failed.";
+        console.error(err);
+      })
+      .finally(() => {
+        loadedCount++;
+        if (loadedCount === total && typeof callback === "function") {
+          callback();
+        }
+      });
   });
 }
 
-// include 완료 후 header.js 자동 추가
+// ✅ include 완료 후 header.js 자동 추가
 includeHTML(() => {
   const script = document.createElement("script");
 
   const isGithubPages = window.location.hostname.includes("github.io");
 
   if (isGithubPages) {
-    // GitHub raw 링크 절대경로
-    script.src = "https://raw.githubusercontent.com/bb0nzii/PhotoismCC/main/js/header.js";
+    // GitHub Pages에서 접근 가능한 JS 경로
+    script.src = "https://bb0nzii.github.io/PhotoismCC/js/header.js";
   } else {
     // 로컬 환경: 현재 HTML 위치 기준 상대경로 계산
     const pathParts = window.location.pathname.split("/");
@@ -163,7 +231,6 @@ includeHTML(() => {
     script.src = pathPrefix + "js/header.js";
   }
 
-  // DOM이 준비된 후 load 이벤트 실행
   script.addEventListener("load", () => {
     console.log("✅ header.js loaded");
   });
