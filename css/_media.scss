@@ -5,12 +5,12 @@ body{
         .main-bg-container{
             .main-textbox{
                 .main-text-title{
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     margin-bottom: 10px;
                 }
 
                 .main-text-sub{
-                    font-size: 16px;
+                    font-size: 1rem;
                     margin-bottom: 20px;
                 }
 
@@ -26,7 +26,11 @@ body{
                 }
 
                 .main-copy{
-                    font-size: 10px;
+                    font-size: 0.625rem;
+
+                    .main-copyright{
+                        font-size: 0.625rem;
+                    }
                 }
             } //main-textbox
         } //main-bg-container

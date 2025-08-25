@@ -1,9 +1,16 @@
-html, html * {
+html{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Pretendard, sans-serif;
+    color: var(--color-photoism-darkgrey);
+}
+
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Pretendard, sans-serif;
-    color: var(--color-photoism-darkgrey);
 }
 
 ul, ol, li{

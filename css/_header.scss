@@ -12,7 +12,7 @@
           position: fixed;
           // border: 1px solid white;
           right: 5%;
-          font-size: 36px;
+          font-size: 2rem;
           color: white;
           cursor: pointer;
           line-height: 50px;
@@ -33,7 +33,7 @@
                     display: block;
                     color: white;
                     text-align: center;
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     line-height: 150px;
                     text-shadow: 0 0 50px rgba(0,0,0,0.1);
 
@@ -68,7 +68,7 @@
         li{
           a{
             line-height: 80px;
-            font-size: 18px;
+            font-size: 1.125rem;
           }
         }
       }

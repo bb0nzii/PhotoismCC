@@ -1,0 +1,45 @@
+body{
+    .takeover-container{
+        .takeover-bg{
+            width: 70%;
+            min-width: 680px;
+            height: 300px;
+            margin: 50px auto;
+            background: url(../src/img/takeover-bg.png) no-repeat center center/cover;
+            border-radius: 30px;
+        }
+
+        .takeover-content{
+            width: 70%;
+            margin: 0 auto;
+
+            .takeover-item{
+                margin-bottom: 80px;
+
+                .takeover-title{
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+
+                .takeover-sub{
+                    font-size: 1.6rem;
+                    margin-left: 10px;
+                    margin-bottom: 5px;
+                }
+
+                .takeover-text{
+                    font-size: 1.15rem;
+                    line-height: 1.6;
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+
+                    .takeover-subtext{
+                        font-size: 0.85em;
+                        font-weight: 200;
+                        color: grey;
+                    }
+                }
+            } //takeover-item
+        } //takeover-content
+    } //takeover-container
+}

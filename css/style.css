@@ -1,10 +1,17 @@
 @import url("https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css");
-html, html * {
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Pretendard, sans-serif;
+  color: var(--color-photoism-darkgrey);
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Pretendard, sans-serif;
-  color: var(--color-photoism-darkgrey);
 }
 
 ul, ol, li {
@@ -89,6 +96,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
   .nav-include {
     height: 60px;
   }
@@ -104,7 +114,7 @@ a {
 .nav-container .top-nav .menu-toggle {
   position: fixed;
   right: 5%;
-  font-size: 36px;
+  font-size: 2rem;
   color: white;
   cursor: pointer;
   line-height: 50px;
@@ -124,7 +134,7 @@ a {
   display: block;
   color: white;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 150px;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
@@ -150,7 +160,7 @@ a {
   }
   .nav-container .top-nav .top-navbar li a {
     line-height: 80px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .nav-container .top-nav .top-navbar.active {
     transform: translateX(0);
@@ -172,12 +182,12 @@ body .main-container .main-bg-container .main-textbox {
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 body .main-container .main-bg-container .main-textbox .main-text-title {
-  font-size: 48px;
+  font-size: 2.65rem;
   color: white;
   margin-bottom: 20px;
 }
 body .main-container .main-bg-container .main-textbox .main-text-sub {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: white;
   margin-bottom: 40px;
 }
@@ -196,7 +206,7 @@ body .main-container .main-bg-container .main-textbox .main-icon-container li a 
 }
 body .main-container .main-bg-container .main-textbox .main-copy {
   width: 100vw;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.5px;
   color: white;
   position: fixed;
@@ -207,13 +217,49 @@ body .main-container .main-bg-container .main-textbox .main-copy .main-copyright
   color: white;
 }
 
+body .takeover-container .takeover-bg {
+  width: 70%;
+  min-width: 680px;
+  height: 300px;
+  margin: 50px auto;
+  background: url(../src/img/takeover-bg.png) no-repeat center center/cover;
+  border-radius: 30px;
+}
+body .takeover-container .takeover-content {
+  width: 70%;
+  margin: 0 auto;
+}
+body .takeover-container .takeover-content .takeover-item {
+  margin-bottom: 80px;
+}
+body .takeover-container .takeover-content .takeover-item .takeover-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+body .takeover-container .takeover-content .takeover-item .takeover-sub {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+body .takeover-container .takeover-content .takeover-item .takeover-text {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+body .takeover-container .takeover-content .takeover-item .takeover-text .takeover-subtext {
+  font-size: 0.85em;
+  font-weight: 200;
+  color: grey;
+}
+
 @media screen and (max-width: 768px) {
   body .main-container .main-bg-container .main-textbox .main-text-title {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
   }
   body .main-container .main-bg-container .main-textbox .main-text-sub {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 20px;
   }
   body .main-container .main-bg-container .main-textbox .main-icon-container {
@@ -225,6 +271,9 @@ body .main-container .main-bg-container .main-textbox .main-copy .main-copyright
     height: 20px;
   }
   body .main-container .main-bg-container .main-textbox .main-copy {
-    font-size: 10px;
+    font-size: 0.625rem;
+  }
+  body .main-container .main-bg-container .main-textbox .main-copy .main-copyright {
+    font-size: 0.625rem;
   }
 }/*# sourceMappingURL=style.css.map */
