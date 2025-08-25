@@ -30,6 +30,6 @@ function includeHTML() {
 // include 끝난 뒤 header.js 실행
 includeHTML(() => {
   const script = document.createElement("script");
-  script.src = "./js/header.js";
+  script.src = "../js/header.js";
   document.body.appendChild(script);
 });
