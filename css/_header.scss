@@ -1,22 +1,27 @@
 .nav-container{
     width: 100vw;
-    height: 150px;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
+
+    .main-nav{
+      margin-top: 30px;
+    }
 
     .top-nav{
 
         .menu-toggle {
           position: fixed;
           // border: 1px solid white;
+          top: 0;
           right: 5%;
           font-size: 2rem;
           color: white;
           cursor: pointer;
           line-height: 50px;
-          z-index: 9999;
+          z-index: 99999;
         }
 
         .top-navbar{
@@ -33,8 +38,8 @@
                     display: block;
                     color: white;
                     text-align: center;
-                    font-size: 1.5rem;
-                    line-height: 150px;
+                    font-size: 1.4rem;
+                    line-height: 80px;
                     text-shadow: 0 0 50px rgba(0,0,0,0.1);
 
                     &:hover{

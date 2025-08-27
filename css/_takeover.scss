@@ -1,17 +1,27 @@
 body{
     .takeover-container{
+        width: 70%;
+        margin: 0 auto;
+        border: 1px solid gray;
+
         .takeover-bg{
-            width: 70%;
+            width: 100%;
             min-width: 680px;
             height: 300px;
-            margin: 50px auto;
+            margin: 130px auto 50px auto;
             background: url(../src/img/takeover-bg.png) no-repeat center center/cover;
             border-radius: 30px;
         }
 
+        .takeover-nav{
+            .takeover-nav-container{
+                .takeover-nav-textbox{
+                }
+            }
+        }
+
         .takeover-content{
             width: 70%;
-            margin: 0 auto;
 
             .takeover-item{
                 margin-bottom: 80px;
@@ -29,9 +39,23 @@ body{
 
                 .takeover-text{
                     font-size: 1.15rem;
-                    line-height: 1.6;
                     margin-left: 20px;
                     margin-bottom: 20px;
+
+                    li{
+                        line-height: 1.4;
+                        margin-bottom: 5px;
+                        position: relative;
+                        padding-left: 1.2em;
+                        // border: 1px solid red;
+
+                        &::before{
+                            content: "● ";
+                            font-size: 1em;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
 
                     .takeover-subtext{
                         font-size: 0.85em;

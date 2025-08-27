@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css");
 html {
   font-size: 16px;
@@ -91,8 +92,12 @@ a {
 
 .nav-include {
   width: 100vw;
-  height: 150px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: var(--color-photoism-darkgrey);
+  z-index: 9998;
 }
 
 @media screen and (max-width: 768px) {
@@ -105,20 +110,24 @@ a {
 }
 .nav-container {
   width: 100vw;
-  height: 150px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 9999;
+}
+.nav-container .main-nav {
+  margin-top: 30px;
 }
 .nav-container .top-nav .menu-toggle {
   position: fixed;
+  top: 0;
   right: 5%;
   font-size: 2rem;
   color: white;
   cursor: pointer;
   line-height: 50px;
-  z-index: 9999;
+  z-index: 99999;
 }
 .nav-container .top-nav .top-navbar {
   display: flex;
@@ -134,8 +143,8 @@ a {
   display: block;
   color: white;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 150px;
+  font-size: 1.4rem;
+  line-height: 80px;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
 .nav-container .top-nav .top-navbar li a:hover {
@@ -217,17 +226,21 @@ body .main-container .main-bg-container .main-textbox .main-copy .main-copyright
   color: white;
 }
 
-body .takeover-container .takeover-bg {
+body .takeover-container {
   width: 70%;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+body .takeover-container .takeover-bg {
+  width: 100%;
   min-width: 680px;
   height: 300px;
-  margin: 50px auto;
+  margin: 130px auto 50px auto;
   background: url(../src/img/takeover-bg.png) no-repeat center center/cover;
   border-radius: 30px;
 }
 body .takeover-container .takeover-content {
   width: 70%;
-  margin: 0 auto;
 }
 body .takeover-container .takeover-content .takeover-item {
   margin-bottom: 80px;
@@ -243,9 +256,20 @@ body .takeover-container .takeover-content .takeover-item .takeover-sub {
 }
 body .takeover-container .takeover-content .takeover-item .takeover-text {
   font-size: 1.15rem;
-  line-height: 1.6;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+body .takeover-container .takeover-content .takeover-item .takeover-text li {
+  line-height: 1.4;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 1.2em;
+}
+body .takeover-container .takeover-content .takeover-item .takeover-text li::before {
+  content: "● ";
+  font-size: 1em;
+  position: absolute;
+  left: 0;
 }
 body .takeover-container .takeover-content .takeover-item .takeover-text .takeover-subtext {
   font-size: 0.85em;

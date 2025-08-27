@@ -19,7 +19,13 @@
 
 
 // -- And so on
-.nav-include{width: 100vw; height: 150px; background-color: var(--color-photoism-darkgrey);}
+.nav-include{
+    width: 100vw; height: 80px;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: var(--color-photoism-darkgrey);
+    z-index: 9998;
+}
 @media screen and (max-width: 768px) {
     html{font-size: 14px;}
     .nav-include{height: 60px;}
