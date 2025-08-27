@@ -37,3 +37,35 @@ body{
     } //main-container
 } //body
 }
+
+
+// -- takeover
+@media screen and (max-width: 768px) {
+    body{
+        .takeover-container{
+            width: 100%;
+
+            .takeover-bg{
+                width: 100vw;
+                min-width: 0;
+                height: 150px;
+                margin: 60px auto 30px auto;
+                border-radius: 0;
+            }
+
+            .takeover-content-wrap{
+                display: block;
+
+                .takeover-content{
+                    width: 90%;
+                    margin: 0 auto;
+                    // border: 1px solid red;
+                }
+
+                .takeover-nav{
+                    display: none;
+                }
+            } //takeover-content-wrap
+        } //takeover-container
+    } //body
+}

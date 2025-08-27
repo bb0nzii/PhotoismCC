@@ -2,7 +2,7 @@ body{
     .takeover-container{
         width: 70%;
         margin: 0 auto;
-        border: 1px solid gray;
+        // border: 1px solid gray;
 
         .takeover-bg{
             width: 100%;
@@ -13,57 +13,107 @@ body{
             border-radius: 30px;
         }
 
-        .takeover-nav{
-            .takeover-nav-container{
-                .takeover-nav-textbox{
-                }
-            }
-        }
+        .takeover-content-wrap{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            justify-content: space-between;
 
-        .takeover-content{
-            width: 70%;
+            .takeover-content{
+                width: 78%;
 
-            .takeover-item{
-                margin-bottom: 80px;
+                hr{margin-bottom: 60px;}
 
-                .takeover-title{
-                    font-size: 2rem;
-                    margin-bottom: 20px;
-                }
+                .takeover-item{
+                    margin-bottom: 40px;
+                    scroll-margin-top: 130px;
 
-                .takeover-sub{
-                    font-size: 1.6rem;
-                    margin-left: 10px;
-                    margin-bottom: 5px;
-                }
+                    .takeover-title{
+                        font-size: 2rem;
+                        margin-bottom: 20px;
+                    }
 
-                .takeover-text{
-                    font-size: 1.15rem;
-                    margin-left: 20px;
-                    margin-bottom: 20px;
-
-                    li{
-                        line-height: 1.4;
+                    .takeover-sub{
+                        font-size: 1.6rem;
+                        margin-left: 10px;
                         margin-bottom: 5px;
-                        position: relative;
-                        padding-left: 1.2em;
-                        // border: 1px solid red;
+                    }
 
-                        &::before{
-                            content: "● ";
-                            font-size: 1em;
-                            position: absolute;
-                            left: 0;
+                    .takeover-text{
+                        font-size: 1.15rem;
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+
+                        li{
+                            line-height: 1.4;
+                            margin-bottom: 5px;
+                            position: relative;
+                            padding-left: 1.2em;
+                            // border: 1px solid red;
+
+                            &::before{
+                                content: "● ";
+                                font-size: 1em;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+
+                        .takeover-ex{
+                            background-color: rgb(246, 246, 246);
+                            border-radius: 10px;
+                            padding: 20px 20px 20px 30px;
+                            i{font-size: 0.9em;}
+
+                            &::before{
+                                padding-left: 10px;
+                            }
+                        }
+
+                        .takeover-subtext{
+                            font-size: 0.85em;
+                            font-weight: 200;
+                            color: grey;
+                        }
+                    } //takeover-text
+                } //takeover-item
+            } //takeover-content
+
+            .takeover-nav{
+                width: 20%;
+                background-color: rgb(255, 251, 224);
+                border-radius: 10px;
+                padding-top: 30px;
+                position: relative;
+
+                .takeover-nav-container{
+                    // border: 1px solid red;
+                    position: sticky;
+                    top: 120px;
+
+                    .takeover-nav-textbox{
+                        text-align: center;
+                        overflow: hidden;
+
+                        li{
+                            line-height: 40px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            cursor: pointer;
+
+                            &::before{content: "◎ ";}
+                            &:hover{color: rgb(222, 159, 64);}
                         }
                     }
-
-                    .takeover-subtext{
-                        font-size: 0.85em;
-                        font-weight: 200;
-                        color: grey;
-                    }
                 }
-            } //takeover-item
-        } //takeover-content
+            } //takeover-nav
+        } //takeover-content-wrap
+
+        #topBtn{
+            border-radius: 100px;
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+        }
     } //takeover-container
 }
