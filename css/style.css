@@ -367,7 +367,7 @@ body .takeover-container .takeover-content-wrap .takeover-content .takeover-item
 }
 body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text li {
   line-height: 1.4;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   position: relative;
   padding-left: 1.2em;
 }
@@ -405,7 +405,8 @@ body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-cont
   top: 120px;
 }
 body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-container .takeover-nav-textbox {
-  text-align: center;
+  padding-left: 30px;
+  text-align: left;
   overflow: hidden;
 }
 body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-container .takeover-nav-textbox li {

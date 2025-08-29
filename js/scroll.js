@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const mappings = {
     "takeover-nav-1-1": "takeover-1-1",
     "takeover-nav-1-2": "takeover-1-2",
-    "takeover-nav-1-3": "takeover-1-3"
+    "takeover-nav-1-3": "takeover-1-3",
+    "takeover-nav-1-4": "takeover-1-4",
+    "takeover-nav-2-1": "takeover-2-1",
+    "takeover-nav-2-2": "takeover-2-2",
+    "takeover-nav-2-3": "takeover-2-3",
+    "takeover-nav-2-4": "takeover-2-4",
   };
 
   Object.keys(mappings).forEach(navId => {
