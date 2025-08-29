@@ -68,7 +68,23 @@ body{
                             &::before{
                                 padding-left: 10px;
                             }
-                        }
+
+                            .takeover-ex-title{
+                                display: block;
+                                margin-bottom: 10px;
+                            }
+
+                            ul{
+                                li{
+                                    line-height: 25px;
+                                    margin-bottom: 8px;
+
+                                    &::before{
+                                        content: "- ";
+                                    }
+                                }
+                            }
+                        } //takeover-ex
 
                         .takeover-subtext{
                             font-size: 0.85em;

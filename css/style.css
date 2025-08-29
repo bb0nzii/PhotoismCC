@@ -388,6 +388,17 @@ body .takeover-container .takeover-content-wrap .takeover-content .takeover-item
 body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex::before {
   padding-left: 10px;
 }
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex .takeover-ex-title {
+  display: block;
+  margin-bottom: 10px;
+}
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex ul li {
+  line-height: 25px;
+  margin-bottom: 8px;
+}
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex ul li::before {
+  content: "- ";
+}
 body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-subtext {
   font-size: 0.85em;
   font-weight: 200;

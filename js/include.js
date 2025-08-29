@@ -8,7 +8,7 @@ function includeHTML() {
         .then(data => {
           el.innerHTML = data;
 
-          // ✅ header.js 같은 스크립트 태그 실행시키기
+          // header.js 같은 스크립트 태그 실행시키기
           const scripts = el.querySelectorAll("script");
           scripts.forEach(oldScript => {
             const newScript = document.createElement("script");
