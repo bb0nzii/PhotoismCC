@@ -18,7 +18,6 @@ topBtn.addEventListener("click", () => {
 
 // -- 인수인계 네비게이션
 document.addEventListener("DOMContentLoaded", () => {
-  // nav 버튼 id와 섹션 id를 매칭
   const mappings = {
     "takeover-nav-1-1": "takeover-1-1",
     "takeover-nav-1-2": "takeover-1-2",

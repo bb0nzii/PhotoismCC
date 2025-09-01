@@ -60,6 +60,19 @@ body{
                     width: 90%;
                     margin: 0 auto;
                     // border: 1px solid red;
+
+                    .takeover-item{
+                        .takeover-ex{
+                            .camera-guide-container{
+                                // border: 5px solid red;
+
+                                .camera-guide-item{
+                                    width: 90% !important;
+                                    padding-top: 90% !important;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .takeover-nav{

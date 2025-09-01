@@ -238,6 +238,9 @@ a {
   font-weight: bold;
   color: inherit;
 }
+.footer-container .footer-sec2 .footer-copy-container .footer-copy a:hover {
+  text-decoration: underline;
+}
 .footer-container .footer-sec2 .footer-copy-container .footer-copy .footer-copyright {
   display: block;
 }
@@ -332,7 +335,7 @@ body .takeover-container .takeover-bg {
   min-width: 680px;
   height: 300px;
   margin: 130px auto 50px auto;
-  background: url(../src/img/takeover-bg.png) no-repeat center center/cover;
+  background: url(../src/img/takeover/takeover-bg.png) no-repeat center center/cover;
   border-radius: 30px;
 }
 body .takeover-container .takeover-content-wrap {
@@ -399,10 +402,33 @@ body .takeover-container .takeover-content-wrap .takeover-content .takeover-item
 body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex ul li::before {
   content: "- ";
 }
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex .camera-guide-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex .camera-guide-container .camera-guide-item {
+  width: 30%;
+  padding-top: 30%;
+}
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex .camera-guide-container .camera-guide-item1 {
+  background: url(../src/img/takeover/camera-guide1.jpeg) no-repeat center center/cover;
+}
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex .camera-guide-container .camera-guide-item2 {
+  background: url(../src/img/takeover/camera-guide2.jpeg) no-repeat center center/cover;
+}
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex .camera-guide-container .camera-guide-item3 {
+  background: url(../src/img/takeover/camera-guide3.jpeg) no-repeat center center/cover;
+}
 body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-subtext {
   font-size: 0.85em;
   font-weight: 200;
   color: grey;
+}
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item:last-child {
+  margin-bottom: 150px;
 }
 body .takeover-container .takeover-content-wrap .takeover-nav {
   width: 20%;
@@ -474,6 +500,10 @@ body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-cont
   body .takeover-container .takeover-content-wrap .takeover-content {
     width: 90%;
     margin: 0 auto;
+  }
+  body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-ex .camera-guide-container .camera-guide-item {
+    width: 90% !important;
+    padding-top: 90% !important;
   }
   body .takeover-container .takeover-content-wrap .takeover-nav {
     display: none;

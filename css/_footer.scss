@@ -61,6 +61,10 @@
                 a{
                     font-weight: bold;
                     color: inherit;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
 
                 .footer-copyright{

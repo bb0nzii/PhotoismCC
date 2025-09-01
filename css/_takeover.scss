@@ -9,7 +9,7 @@ body{
             min-width: 680px;
             height: 300px;
             margin: 130px auto 50px auto;
-            background: url(../src/img/takeover-bg.png) no-repeat center center/cover;
+            background: url(../src/img/takeover/takeover-bg.png) no-repeat center center/cover;
             border-radius: 30px;
         }
 
@@ -84,6 +84,24 @@ body{
                                     }
                                 }
                             }
+
+                            .camera-guide-container{
+                                // border: 1px solid red;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 5px;
+                                
+                                .camera-guide-item{
+                                    width: 30%;
+                                    padding-top: 30%;
+                                }
+
+                                .camera-guide-item1{background: url(../src/img/takeover/camera-guide1.jpeg) no-repeat center center/cover;}
+                                .camera-guide-item2{background: url(../src/img/takeover/camera-guide2.jpeg) no-repeat center center/cover;}
+                                .camera-guide-item3{background: url(../src/img/takeover/camera-guide3.jpeg) no-repeat center center/cover;}
+                            }
                         } //takeover-ex
 
                         .takeover-subtext{
@@ -92,6 +110,11 @@ body{
                             color: grey;
                         }
                     } //takeover-text
+
+                    &:last-child{
+                        margin-bottom: 150px;
+                    }
+
                 } //takeover-item
             } //takeover-content
 
