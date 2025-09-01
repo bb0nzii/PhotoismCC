@@ -501,9 +501,15 @@ body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-cont
     width: 90%;
     margin: 0 auto;
   }
+  body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-sub {
+    margin-left: 0;
+  }
+  body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text {
+    margin-left: 0;
+  }
   body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-ex .camera-guide-container .camera-guide-item {
-    width: 90% !important;
-    padding-top: 90% !important;
+    width: 100% !important;
+    padding-top: 100% !important;
   }
   body .takeover-container .takeover-content-wrap .takeover-nav {
     display: none;

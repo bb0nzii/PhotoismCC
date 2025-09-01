@@ -62,13 +62,16 @@ body{
                     // border: 1px solid red;
 
                     .takeover-item{
+                        .takeover-sub{margin-left: 0;}
+                        .takeover-text{margin-left: 0;}
+                        
                         .takeover-ex{
                             .camera-guide-container{
                                 // border: 5px solid red;
 
                                 .camera-guide-item{
-                                    width: 90% !important;
-                                    padding-top: 90% !important;
+                                    width: 100% !important;
+                                    padding-top: 100% !important;
                                 }
                             }
                         }
