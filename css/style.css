@@ -278,6 +278,17 @@ a {
     height: 25px;
   }
 }
+body .main-container .modal-copy {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8em;
+}
+body .main-container .modal-copy a {
+  color: inherit;
+}
+body .main-container .modal-copy a:hover {
+  text-decoration: underline;
+}
 body .main-container .main-bg-container {
   width: 100vw;
   height: 100vh;
