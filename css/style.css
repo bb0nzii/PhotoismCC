@@ -487,6 +487,37 @@ body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-cont
   margin-bottom: 15px;
 }
 
+body .faq-container {
+  width: 96%;
+  margin: 0 auto;
+}
+body .faq-container .faq-title {
+  margin: 130px auto 30px auto;
+}
+body .faq-container .faq-title .faq-sub {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.4em;
+  color: gray;
+}
+body .faq-container .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  color: #000 !important; /* 글자색도 검정 유지 */
+  box-shadow: none !important; /* 클릭 시 그림자 제거 */
+}
+body .faq-container .accordion .accordion-item .accordion-collapse .accordion-body {
+  background-color: rgb(245, 245, 245);
+  padding-left: 20px;
+}
+body .faq-container .accordion .accordion-item .accordion-collapse .accordion-body::before {
+  content: "A. ";
+  position: absolute;
+  font-weight: bold;
+}
+body .faq-container .accordion .accordion-item .accordion-collapse .accordion-body p {
+  padding-left: 20px;
+}
+
 @media screen and (max-width: 768px) {
   body .main-container .main-bg-container .main-textbox .main-text-title {
     font-size: 1.25rem;

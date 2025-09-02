@@ -1,0 +1,46 @@
+body{
+    .faq-container{
+        width: 96%;
+        margin: 0 auto;
+
+        .faq-title{
+            margin: 130px auto 30px auto;
+
+            .faq-sub{
+                display: block;
+                margin-top: 10px;
+                font-size: 0.4em;
+                color: gray;
+            }
+        } //faq-title
+
+        .accordion{
+            .accordion-item{
+                .accordion-header{
+                    .accordion-button:not(.collapsed) {
+                        background-color: #fff !important;
+                        color: #000 !important; /* 글자색도 검정 유지 */
+                        box-shadow: none !important; /* 클릭 시 그림자 제거 */
+                    }
+                }
+
+                .accordion-collapse{
+                    .accordion-body{
+                        background-color: rgb(245, 245, 245);
+                        padding-left: 20px;
+
+                        &::before{
+                            content: "A. ";
+                            position: absolute;
+                            font-weight: bold;
+                        }
+
+                        p{
+                            padding-left: 20px;
+                        }
+                    } //accoridon-body
+                }
+            } //accordion-item
+        } //accordian
+    }
+}
