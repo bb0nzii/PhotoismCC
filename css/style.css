@@ -453,7 +453,7 @@ body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-cont
   top: 120px;
 }
 body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-container .takeover-nav-textbox {
-  padding-left: 10%;
+  padding: 0 10% 0 10%;
   text-align: left;
   overflow: hidden;
 }
@@ -489,7 +489,7 @@ body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-cont
 
 body .faq-container {
   width: 96%;
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
 }
 body .faq-container .faq-title {
   margin: 130px auto 30px auto;
