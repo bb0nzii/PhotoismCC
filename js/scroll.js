@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "takeover-nav-2-2": "takeover-2-2",
     "takeover-nav-2-3": "takeover-2-3",
     "takeover-nav-2-4": "takeover-2-4",
+    "takeover-nav-2-5": "takeover-2-5",
   };
 
   Object.keys(mappings).forEach(navId => {

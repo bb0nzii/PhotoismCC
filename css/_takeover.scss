@@ -30,7 +30,7 @@ body{
 
                     .takeover-title{
                         font-size: 2rem;
-                        margin-bottom: 20px;
+                        margin-bottom: 30px;
                     }
 
                     .takeover-sub{
@@ -42,7 +42,7 @@ body{
                     .takeover-text{
                         font-size: 1.15rem;
                         margin-left: 20px;
-                        margin-bottom: 20px;
+                        margin-bottom: 30px;
 
                         li{
                             line-height: 1.4;
@@ -131,18 +131,33 @@ body{
                     top: 120px;
 
                     .takeover-nav-textbox{
-                        padding-left: 30px;
+                        padding-left: 10%;
                         text-align: left;
                         overflow: hidden;
 
                         li{
                             line-height: 40px;
                             white-space: nowrap;
+                            overflow: hidden;
                             text-overflow: ellipsis;
                             cursor: pointer;
 
                             &::before{content: "◎ ";}
                             &:hover{color: rgb(222, 159, 64);}
+                        }
+
+                        p{
+                            font-size: 0.9em;
+                            margin-bottom: 8px;
+                            margin-left: 10px;
+                            font-weight: 400;
+                            line-height: 15px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+
+                            &::before{content: "• ";}
+                            &:last-child{margin-bottom: 15px;}
                         }
                     }
                 }
