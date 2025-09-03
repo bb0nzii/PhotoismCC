@@ -90,6 +90,10 @@ a {
   background: url(../src/icon/icon-kakao.svg) no-repeat center center/cover;
 }
 
+.icon-photoism {
+  background: url(../src/icon/icon-photoism.svg) no-repeat center center/cover;
+}
+
 .nav-include {
   width: 100vw;
   height: 80px;
