@@ -38,3 +38,13 @@
     html{font-size: 12px;}
     .nav-include{height: 60px;}
 }
+kbd {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--color-photoism-darkgrey);
+  border-radius: 6px;
+  font-family: "Pretendard", "Segoe UI", Roboto, sans-serif;
+}

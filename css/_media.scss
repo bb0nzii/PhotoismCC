@@ -63,7 +63,11 @@ body{
 
                     .takeover-item{
                         .takeover-sub{margin-left: 0;}
-                        .takeover-text{margin-left: 0;}
+                        .takeover-text{
+                            margin-left: 0;
+
+                            li{line-height: 1;}
+                        }
                         
                         .takeover-ex{
                             .camera-guide-container{

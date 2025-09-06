@@ -57,6 +57,10 @@ body{
                                 position: absolute;
                                 left: 0;
                             }
+
+                            kbd{
+                                &:first-child{margin-left: 18px;}
+                            }
                         }
 
                         .takeover-ex{

@@ -120,6 +120,17 @@ a {
     height: 60px;
   }
 }
+kbd {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--color-photoism-darkgrey);
+  border-radius: 6px;
+  font-family: "Pretendard", "Segoe UI", Roboto, sans-serif;
+}
+
 .nav-container {
   width: 100vw;
   height: 80px;
@@ -395,6 +406,9 @@ body .takeover-container .takeover-content-wrap .takeover-content .takeover-item
   position: absolute;
   left: 0;
 }
+body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text li kbd:first-child {
+  margin-left: 18px;
+}
 body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text .takeover-ex {
   background-color: rgb(246, 246, 246);
   border-radius: 10px;
@@ -569,6 +583,9 @@ body .faq-container .accordion .accordion-item .accordion-collapse .accordion-bo
   }
   body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text {
     margin-left: 0;
+  }
+  body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-text li {
+    line-height: 1;
   }
   body .takeover-container .takeover-content-wrap .takeover-content .takeover-item .takeover-ex .camera-guide-container .camera-guide-item {
     width: 100% !important;
