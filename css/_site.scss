@@ -1,0 +1,88 @@
+body{
+    .site-container{
+        width: 96%;
+        margin: 0 auto 120px auto;
+
+        .site-title{
+            margin: 130px auto 30px auto;
+        }
+
+        .site-item-container{
+            width: 100%;
+            padding: 25px;
+            margin-bottom: 50px;
+            background-color: lightyellow;
+            border-radius: 15px;
+
+            .site-subtitle{
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+            }
+
+            .site-item-box{
+                // border: 1px solid red;
+                display: flex;
+                column-gap: 20px;
+                align-items: center;
+                justify-content: start;
+                flex-wrap: wrap;
+
+                .site-item-link{
+                    width: 150px;
+                    height: 150px;
+
+
+                    .site-item-link-img{
+                        width: 80%;
+                        padding-top: 80%;
+                        margin: 0 auto 10px auto;
+                        background-color: grey;
+                        border-radius: 100%;
+                    }
+
+                    .site-item-link-text{
+                        width: 100%;
+                        text-align: center;
+                        font-size: 1.1rem;
+                    }
+                } //site-item-link
+
+                .site-item{
+                    width: 370px;
+                    height: 370px;
+                    // border: 1px solid black;
+
+                    .site-item-img{
+                        width: 100%;
+                        height: 80%;
+                        background: url(../src/img/pikmin.jpeg) no-repeat top center/cover;
+                    }
+
+                    .site-item-text-container{
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        justify-content: center;
+                        column-gap: 10px;
+                        // border: 1px solid red;
+
+                        .site-item-text{
+                            font-size: 1.25rem;
+                            padding-left: 20px;
+                            text-align: center;
+                        }
+
+                        .site-btn{
+                            background-color: var(--color-photoism-pink);
+                            border-radius: 100%;
+                            color: white;
+
+                        }
+                    }
+                }
+            } //site-item-box
+        } //site-item-container
+    } //site-container
+}

@@ -536,6 +536,78 @@ body .faq-container .accordion .accordion-item .accordion-collapse .accordion-bo
   padding-left: 20px;
 }
 
+body .site-container {
+  width: 96%;
+  margin: 0 auto 120px auto;
+}
+body .site-container .site-title {
+  margin: 130px auto 30px auto;
+}
+body .site-container .site-item-container {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 50px;
+  background-color: lightyellow;
+  border-radius: 15px;
+}
+body .site-container .site-item-container .site-subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+body .site-container .site-item-container .site-item-box {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+body .site-container .site-item-container .site-item-box .site-item-link {
+  width: 150px;
+  height: 150px;
+}
+body .site-container .site-item-container .site-item-box .site-item-link .site-item-link-img {
+  width: 80%;
+  padding-top: 80%;
+  margin: 0 auto 10px auto;
+  background-color: grey;
+  border-radius: 100%;
+}
+body .site-container .site-item-container .site-item-box .site-item-link .site-item-link-text {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+body .site-container .site-item-container .site-item-box .site-item {
+  width: 370px;
+  height: 370px;
+}
+body .site-container .site-item-container .site-item-box .site-item .site-item-img {
+  width: 100%;
+  height: 80%;
+  background: url(../src/img/pikmin.jpeg) no-repeat top center/cover;
+}
+body .site-container .site-item-container .site-item-box .site-item .site-item-text-container {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+body .site-container .site-item-container .site-item-box .site-item .site-item-text-container .site-item-text {
+  font-size: 1.25rem;
+  padding-left: 20px;
+  text-align: center;
+}
+body .site-container .site-item-container .site-item-box .site-item .site-item-text-container .site-btn {
+  background-color: var(--color-photoism-pink);
+  border-radius: 100%;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   body .main-container .main-bg-container .main-textbox .main-text-title {
     font-size: 1.25rem;
