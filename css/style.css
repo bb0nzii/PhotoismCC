@@ -506,7 +506,7 @@ body .takeover-container .takeover-content-wrap .takeover-nav .takeover-nav-cont
 }
 
 body .faq-container {
-  width: 96%;
+  width: 90%;
   margin: 0 auto 120px auto;
 }
 body .faq-container .faq-title {
@@ -537,41 +537,53 @@ body .faq-container .accordion .accordion-item .accordion-collapse .accordion-bo
 }
 
 body .site-container {
-  width: 96%;
+  width: 90%;
   margin: 0 auto 120px auto;
+}
+body .site-container hr {
+  margin-bottom: 60px;
 }
 body .site-container .site-title {
   margin: 130px auto 30px auto;
 }
+body .site-container .site-subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+body .site-container .site-subtitle::before {
+  content: "◎";
+  margin: 0 8px 0 20px;
+}
 body .site-container .site-item-container {
   width: 100%;
   padding: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background-color: lightyellow;
   border-radius: 15px;
-}
-body .site-container .site-item-container .site-subtitle {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
 }
 body .site-container .site-item-container .site-item-box {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 body .site-container .site-item-container .site-item-box .site-item-link {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 46%;
+  max-width: 150px;
+  max-height: 150px;
 }
 body .site-container .site-item-container .site-item-box .site-item-link .site-item-link-img {
   width: 80%;
   padding-top: 80%;
   margin: 0 auto 10px auto;
-  background-color: grey;
+  background-color: white;
   border-radius: 100%;
+  transition: all 0.25s;
+}
+body .site-container .site-item-container .site-item-box .site-item-link .site-item-link-img:hover {
+  background-size: 70%;
 }
 body .site-container .site-item-container .site-item-box .site-item-link .site-item-link-text {
   width: 100%;
@@ -608,37 +620,68 @@ body .site-container .site-item-container .site-item-box .site-item .site-item-t
   border-radius: 100%;
   color: white;
 }
+body .site-container .site-item-container:last-child {
+  margin-bottom: 150px;
+}
+
+.site-item-link-img1 {
+  background: url(../src/icon/site-consentForm.png) no-repeat center center/65%;
+}
+
+.site-item-link-img2 {
+  background: url(../src/icon/site-retouchRequest.png) no-repeat center center/65%;
+}
+
+.site-item-link-img3 {
+  background: url(../src/icon/site-IDphoto.png) no-repeat center center/65%;
+}
+
+.site-item-link-img4 {
+  background: url(../src/icon/site-retouchCheck.png) no-repeat center center/65%;
+}
+
+.site-item-link-img5 {
+  background: url(../src/icon/site-Reservation.png) no-repeat center center/65%;
+}
+
+.site-item-link-img6 {
+  background: url(../src/icon/site-drive.svg) no-repeat center center/65%;
+}
+
+.site-item-link-img7 {
+  background: url(../src/icon/site-guide.png) no-repeat center center/65%;
+}
 
 .site-item-img1 {
-  background: url(../src/img/4CUT/풀네컷_가로\(블랙\).jpg) no-repeat center center/contain;
+  background: url(../src/img/4CUT/blackFull_W.jpg) no-repeat center center/contain;
 }
 
 .site-item-img2 {
-  background: url(../src/img/4CUT/풀네컷_세로\(블랙\).jpg) no-repeat center center/contain;
+  background: url(../src/img/4CUT/blackFull_H.jpg) no-repeat center center/contain;
 }
 
 .site-item-img3 {
-  background: url(../src/img/4CUT/필름네컷_가로\(블랙\).jpg) no-repeat center center/contain;
+  background: url(../src/img/4CUT/blackFilm_W.jpg) no-repeat center center/contain;
 }
 
 .site-item-img4 {
-  background: url(../src/img/4CUT/필름네컷_세로\(블랙\).jpg) no-repeat center center/contain;
+  background: url(../src/img/4CUT/blackFilm_H.jpg) no-repeat center center/contain;
 }
 
 .site-item-img5 {
-  background: url(../src/img/4CUT/풀네컷_가로\(화이트\).jpg) no-repeat center center/contain;
+  background: url(../src/img/4CUT/whiteFull_W.jpg) no-repeat center center/contain;
 }
 
 .site-item-img6 {
-  background: url(../src/img/4CUT/풀네컷_세로\(화이트\).jpg) no-repeat center center/contain;
+  background: url(../src/img/4CUT/whiteFull_H.jpg) no-repeat center center/contain;
 }
 
 .site-item-img7 {
-  background: url(../src/img/4CUT/필름네컷_가로\(화이트\).jpg) no-repeat center center/contain;
+  background: url(../src/img/4CUT/whiteFilm_W.jpg) no-repeat center center/contain;
 }
 
 .site-item-img8 {
-  background: url(../src/img/4CUT/필름네컷_세로\(화이트\).jpg) no-repeat center center/contain;
+  background: url(../src/img/4CUT/whiteFilm_H.jpg) no-repeat center center/contain;
 }
 
 @media screen and (max-width: 768px) {
