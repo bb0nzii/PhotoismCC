@@ -652,36 +652,80 @@ body .site-container .site-item-container:last-child {
   background: url(../src/icon/site-guide.png) no-repeat center center/65%;
 }
 
-.site-item-img1 {
+.site-item-img-4cut1 {
   background: url(../src/img/4CUT/blackFull_W.jpg) no-repeat center center/contain;
 }
 
-.site-item-img2 {
+.site-item-img-4cut2 {
   background: url(../src/img/4CUT/blackFull_H.jpg) no-repeat center center/contain;
 }
 
-.site-item-img3 {
+.site-item-img-4cut3 {
   background: url(../src/img/4CUT/blackFilm_W.jpg) no-repeat center center/contain;
 }
 
-.site-item-img4 {
+.site-item-img-4cut4 {
   background: url(../src/img/4CUT/blackFilm_H.jpg) no-repeat center center/contain;
 }
 
-.site-item-img5 {
+.site-item-img-4cut5 {
   background: url(../src/img/4CUT/whiteFull_W.jpg) no-repeat center center/contain;
 }
 
-.site-item-img6 {
+.site-item-img-4cut6 {
   background: url(../src/img/4CUT/whiteFull_H.jpg) no-repeat center center/contain;
 }
 
-.site-item-img7 {
+.site-item-img-4cut7 {
   background: url(../src/img/4CUT/whiteFilm_W.jpg) no-repeat center center/contain;
 }
 
-.site-item-img8 {
+.site-item-img-4cut8 {
   background: url(../src/img/4CUT/whiteFilm_H.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-9cut {
+  background: url(../src/img/9cut_6x8.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-pocket1 {
+  background: url(../src/img/pocket/pocket_W.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-pocket2 {
+  background: url(../src/img/pocket/pocket_H.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-pocket3 {
+  background: url(../src/img/pocket/pocket_HW.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-pocket4 {
+  background: url(../src/img/pocket/pocket_pet-toism.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-2cut1 {
+  background: url(../src/img/2CUT/black2CUT_W.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-2cut2 {
+  background: url(../src/img/2CUT/black2CUT_H.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-2cut3 {
+  background: url(../src/img/2CUT/black2CUT_HW.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-2cut4 {
+  background: url(../src/img/2CUT/white2CUT_W.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-2cut5 {
+  background: url(../src/img/2CUT/white2CUT_H.jpg) no-repeat center center/contain;
+}
+
+.site-item-img-2cut6 {
+  background: url(../src/img/2CUT/white2CUT_HW.jpg) no-repeat center center/contain;
 }
 
 @media screen and (max-width: 768px) {
