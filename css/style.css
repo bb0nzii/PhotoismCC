@@ -749,11 +749,11 @@ white나 black처럼 의미가 고정된 색상은 직접 사용해
 }
 .faq {
   width: 90%;
-  margin: 0 auto 120px auto;
+  margin: 130px auto 120px auto;
 }
 
 .faq__title {
-  margin: 130px auto 30px auto;
+  margin-bottom: 30px;
 }
 
 .faq__desc {
@@ -910,7 +910,7 @@ white나 black처럼 의미가 고정된 색상은 직접 사용해
   width: 90%;
   height: 100%;
   min-height: 780px;
-  margin: 120px auto 120px auto;
+  margin: 130px auto 120px auto;
 }
 
 .bbs__title {
