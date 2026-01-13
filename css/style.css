@@ -454,7 +454,7 @@ white나 black처럼 의미가 고정된 색상은 직접 사용해
 .home__hero {
   width: 100vw;
   height: 100vh;
-  background: url(../../assets/bg/main-bg.jpg) no-repeat center center/cover;
+  background: url(../assets/bg/main-bg.jpg) no-repeat center center/cover;
   display: flex;
   align-items: center;
 }
