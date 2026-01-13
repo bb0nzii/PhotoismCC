@@ -1,12 +1,12 @@
 //header.js
 console.log("✅ header.js loaded");
 
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".top-navbar");
+const toggle = document.querySelector(".header__toggle");
+const nav = document.querySelector(".header__menu");
 
 if (toggle && nav) {
   toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
+    nav.classList.toggle("header--open");
     console.log("👉 메뉴 토글 클릭됨");
   });
 } else {

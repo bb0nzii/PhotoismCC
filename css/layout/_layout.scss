@@ -1,0 +1,22 @@
+.nav-include{
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: var(--color-brand-dark);
+  z-index: 9998;
+}
+
+.main-nav{
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 12px;
+  }
+  
+  .nav-include{
+    height: 60px;
+  }
+}

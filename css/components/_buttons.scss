@@ -1,0 +1,31 @@
+.scroll-top {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 999;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: var(--color-brand-primary);
+
+    cursor: pointer;
+
+    /* Bootstrap btn 영향 차단 */
+    border: none;
+    padding: 0;
+}
+
+.scroll-top__icon {
+    display: block;
+    fill: currentColor;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .scroll-top{
+        bottom: 3%;
+        width: 32px;
+        height: 32px;
+    }
+}

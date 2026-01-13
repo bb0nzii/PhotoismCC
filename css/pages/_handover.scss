@@ -1,0 +1,231 @@
+.handover{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.handover-hero{
+    width: 100%;
+}
+
+.handover-hero__image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 130px auto 50px auto;
+    border-radius: 15px;
+}
+
+
+
+// -- layout
+
+.handover-layout{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.handover-layout__content{
+    width: 78%;
+}
+            
+.handover-section{
+    margin-bottom: 40px;
+    scroll-margin-top: 130px;
+
+    &:last-child{
+        margin-bottom: 150px;
+    }
+}
+
+.handover-section__title{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.handover-section__subtitle{
+    font-size: 1.6rem;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.handover-section__list{
+    font-size: 1.15rem;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.handover-section__item{
+    line-height: 1.4;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 1.2em;
+
+    &::before{
+        content: "● ";
+        font-size: 1em;
+        position: absolute;
+        left: 0;
+    }
+
+    kbd{
+        &:first-child{margin-left: 18px;}
+    }
+}
+
+.handover-section__note{
+    font-size: 0.85em;
+    font-weight: 200;
+    color: var(--color-text-muted);
+}
+
+.handover-section__item--example{
+    background-color: var(--color-bg-example);
+    border-radius: 10px;
+    padding: 20px 20px 20px 30px;
+
+    &::before{
+        padding-left: 10px;
+    }
+}
+
+.handover-section__example-label{
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.handover-section__example-list{
+    width: 100%;
+    // 솔직히 이거 뭘 넣어햐 할지 모르겠음, 추후 수정 필요
+}
+
+.handover-section__example-item{
+    line-height: 25px;
+    margin-bottom: 8px;
+
+    &::before{
+        content: "- ";
+    }
+}
+
+.handover-section__example-text{
+    display: block;
+    font-size: 0.9em;
+}
+
+.handover-section__camera-guide{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.handover-section__camera-item{
+    width: 30%;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+// 네비게이션
+.handover-nav{
+    width: 20%;
+    background-color: var(--color-bg-highlight);
+    border-radius: 10px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.handover-nav__container{
+    // border: 1px solid red;
+    position: sticky;
+    top: 120px;
+}
+
+.handover-nav__list{
+    padding: 0 10% 0 10%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.handover-nav__title{
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-weight: 700;
+
+    &::before{content: "◎ ";}
+    &:hover{color: var(--color-brand-primary);}
+}
+
+.handover-nav__item{
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &::before{content: "• ";}
+    &:last-child{margin-bottom: 15px;}
+}
+
+
+
+
+
+// -- media
+@media screen and (max-width: 768px) {
+    .handover{
+        width: 100%;
+    }
+
+    .handover-hero__image{
+        width: 100vw;
+        min-width: 0;
+        height: 150px;
+        margin: 60px auto 30px auto;
+        border-radius: 0;
+    }
+
+    .handover-layout{
+        display: block;
+    }
+
+    .handover-layout__content{
+        width: 90%;
+        margin: 0 auto;
+        // border: 1px solid red;
+    }
+
+    .handover-section__subtitle{
+        margin-left: 0;
+    }
+
+    .handover-section__list{
+        margin-left: 0;
+    }
+
+    .handover-section__item{
+        line-height: 1.2;
+    }
+
+    .handover-section__camera-item{
+        width: 100% !important;
+    }
+
+    .handover-nav{
+        display: none;
+    }
+}

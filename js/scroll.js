@@ -1,47 +1,23 @@
-// -- 탑버튼
-const topBtn = document.getElementById("topBtn");
+(function initScrollTop() {
+  const topBtn = document.querySelector(".scroll-top");
 
-// 스크롤 위치에 따라 버튼 보이기
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 400) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
+  // 아직 include 안 됐으면 재시도
+  if (!topBtn) {
+    requestAnimationFrame(initScrollTop);
+    return;
   }
-});
 
-topBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-
-
-// -- 인수인계 네비게이션
-document.addEventListener("DOMContentLoaded", () => {
-  const mappings = {
-    "takeover-nav-1-1": "takeover-1-1",
-    "takeover-nav-1-2": "takeover-1-2",
-    "takeover-nav-1-3": "takeover-1-3",
-    "takeover-nav-1-4": "takeover-1-4",
-    "takeover-nav-2-1": "takeover-2-1",
-    "takeover-nav-2-2": "takeover-2-2",
-    "takeover-nav-2-3": "takeover-2-3",
-    "takeover-nav-2-4": "takeover-2-4",
-    "takeover-nav-2-5": "takeover-2-5",
-    "takeover-nav-2-6": "takeover-2-6",
-  };
-
-  Object.keys(mappings).forEach(navId => {
-    const navItem = document.getElementById(navId);
-    const targetId = mappings[navId];
-
-    if (navItem) {
-      navItem.addEventListener("click", () => {
-        const target = document.getElementById(targetId);
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      });
-    }
+  // 스크롤 시 표시 제어
+  window.addEventListener("scroll", () => {
+    topBtn.classList.toggle("is-visible", window.scrollY > 400);
   });
-});
+
+  // 클릭 시 최상단 이동
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+})();
+

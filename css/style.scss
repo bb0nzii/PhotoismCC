@@ -1,10 +1,15 @@
-@import "reset";
-@import "font";
-@import "palette";
-@import "header";
-@import "footer";
-@import "main";
-@import "takeover";
-@import "faq";
-@import "site";
-@import "media";
+@use "base/reset";
+@use "base/base";
+@use "base/variables";
+
+@use "components/buttons";
+@use "components/header";
+@use "components/footer";
+@use "components/search";
+
+@use "layout/layout.scss";
+
+@use "pages/home";
+@use "pages/handover";
+@use "pages/faq";
+@use "pages/site";

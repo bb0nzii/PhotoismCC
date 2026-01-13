@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="../assets/logo/icon.png" sizes="196x196">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>춘천점 인수인계 자료</title>
+</head>
+<body>
+
+    <!-- nav include -->
+    <div class="nav-include">
+        <div w3-include-html="../include/header.html"></div>
+    </div>
+
+    <main class="handover">
+
+        <!-- 맨 위 배경 -->
+        <section class="handover-hero">
+            <img src="../assets/handover/banner.png" class="handover-hero__image" alt="photoiom banner">
+        </section>
+
+        <div w3-include-html="../include/search.html"></div>
+
+        <!-- 인수인계 내용 + 네비게이션 -->
+        <div class="handover-layout">
+            <!-- 인수인계 내용 -->
+            <div class="handover-layout__content">
+
+                <!-- 컴퓨터 -->
+                <div class="handover-section" id="handover1">
+                    <h1 class="font-bold handover-section__title">🖥️ 컴퓨터 </h1>
+                    <h2 class="font-bold handover-section__subtitle">[메인컴퓨터]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">사진 편집 및 보관, 인화, 고객 응대 등 모든 작업에 사용되는 가장 중요한 컴퓨터</li>
+                        <li class="handover-section__item">안에 들어있는 파일이 많음 + 구형 모델 때문에 렉이 잦으니 창은 최소한으로 켜두는 것을 추천</li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">외장하드 목록 :</p>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item"><span class="font-medium">메가클라우드외장하드(J드라이브)</span> : 메인컴퓨터, 셀렉컴퓨터와 연결된 납작한 사각형 외장하드. 고객님들 월별 폴더와 인화용틀 샘플 등 편집 및 인화에 필요한 모든 것들이 담겨있음. 한 번 선을 뽑아서 연결이 끊기면 셀렉컴퓨터와 다시 연결하기 매우매우 번거로우니 웬만하면 연결 해제하지 말 것</li>
+                                <li class="handover-section__example-item"><span class="font-medium">My Book(F드라이브)</span> : 메인컴퓨터와 연결된 큰 직육면체 외장하드. 가장 용량이 큰 외장하드로 메가클라우드에서 월별 폴더, 셀렉컴퓨터에서 고객님들의 개별 파일들을 모두 모아 백업해두고 있음! 용량이 커서 메인컴퓨터가 무거워지기 때문에 백업 진행할 때만 연결해두고 나머지는 연결선 빼두는 게 좋음</li>
+                                <li class="handover-section__example-item"><span class="font-medium">구글드라이브</span> : 리터치팀&본사와 공유하는 드라이브. 본 인수인계 자료에 적혀있지 않은 내용들은 모두 이곳의 '운영자료' 폴더에 있으니 필독할 것! 이벤트 업로드 자료가 이곳을 통해 올라오기 때문이 수시로 확인해주는 게 좋음 <br> → 연결 끊겼을 때 : 내PC에서 google 검색 후 Google Drive 찾아서 클릭하면 드라이브 접속되면서 다시 연결됨</li>
+                                <li class="handover-section__example-item"><span class="font-medium">Photo1,2</span> : 각각 1,2번부스에서 촬영한 사진들이 저장되는 곳. 카메라 전원 OFF 시 접속할 수 없음. 여기서 다이렉트로 파일 삭제하면 휴지통 거치지 않고 바로 삭제되니 주의할 것</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 class="font-bold handover-section__subtitle">[셀렉컴퓨터]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">고객님이 인화할 사진을 고르는 컴퓨터. 왼쪽부터 순서대로 1,2,3번</li>
+                        <li class="handover-section__item">보통 1번, 3번, 2번 순서대로 많이 사용함. 따라서 용량정리도 위의 순으로 해주는 게 좋음</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- 프린터 -->
+                <div class="handover-section" id="handover2">
+                    <h1 class="font-bold handover-section__title">🖨️ 프린터 </h1>
+                    <h2 class="font-bold handover-section__subtitle">[앱손프린터]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item"><span class="font-medium">4*6사이즈, 6*8사이즈, A4사이즈, A3사이즈까지 인화 가능</span><br> → 6*8사진은 앱손으로 인화 시 인화지 가로로 넣어야 함, A2는 필자가 인화해본 적 없으므로 확인 필요</li>
+                        <li class="handover-section__item">출력속도가 굉장히 느린 편. 1장 당 2~3분 소요된다고 생각하면 됨 <br> → BUT! 결과물이 예쁨. 잉크를 사용하는 프린터의 특성 상 특유의 노이즈가 낀 느낌이 있는데, 이 느낌이나 색감을 좋아하시는 분들이 많음.</li>
+                        <li class="handover-section__item">출근 시 헤드청소와 노즐검사 해주기 <span class="handover-section__note">(노즐에 이상이 있을 시 정상적으로 인화 안 됨)</span></li>
+                        <li class="handover-section__item"><span class="font-medium">카트리지를 인식할 수 없다고 뜰 때</span> : 프린터에 “카트리지를 인식할 수 없습니다” 문구가 안 뜰 때까지 카트리지 덮개 열고 닫기를 반복, 이후 “정품 잉크를 사용하지 않았습니다” 내용이 나올 때 그냥 끝까지 ‘계속’ 눌러주면 됨</li>
+                        <li class="handover-section__item">주기적으로 내부청소 해주어야 함. 프린터 덮개 열면 있는 스펀지를 휴지로 톡톡 누르면서 잉크 빼주기 <br> → 내부청소 진행 시 프린터 전원 끄고 하기! 안 그러면 손 다칠 수 있어요!</li>
+                        <li class="handover-section__item">흰 여백이 생기거나 선이 생겨서 인화될 때에는 롤러청소(용지가이드청소) 4~5회 시행, 시간 되면 헤드청소까지 하는 것 추천</li>
+                        <li class="handover-section__item">프린터에 문제 생겼는데 헤드청소로도 해결되지 않을 때 <span class="font-medium">강력한 헤드청소</span> 해보기 <span class="handover-section__note">(강력한 헤드청소 방법은 구글드라이브(이거 나중에 링크 연결하기)에 있음)</span></li>
+                        <li class="handover-section__item"><span class="font-medium">주사기작업</span> : 주사기를 통해 카트리지 통에 있는 공기방울을 빼주는 작업. 프린터 내부 카트리지(외부에 있는 잉크통X)에는 각각 색깔별로 작은 동그란 뚜껑이 있는데, 그 뚜껑 열고 주사기작업해주면 됨. 작업 시 잉크 색깔이 섞이지 않도록 하나를 작업한 뒤 물로 행구고 다른 색 통 작업하기! 잉크에 공기방울이 나오지 않을 때까지 작업해주면 됨.</li>
+                        <li class="handover-section__item">인화지가 없을 경우 2번부스 창고에 여분 인화지가 있음. 기존 인화지보다 품질이 조금 떨어질 수 있으니 인화 후 이상 없는지 확인하기</li>
+                        <li class="handover-section__item">잉크가 터진 것처럼 인화되었을 때는 인화지를 반대로 넣은 것이므로 돌려서 넣으면 됨 <span class="handover-section__note">(빤빤한 면이 앞으로!)</span></li>
+                    </ul>
+                    <h2 class="font-bold handover-section__subtitle">[후지프린터]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item"><span class="font-medium">4*6사이즈, 6*8사이즈까지 인화 가능</span></li>
+                        <li class="handover-section__item">앱손에 비해 출력속도가 빠른 편, 리본을 사용하기 때문에 코팅된 듯이 선명함</li>
+                        <li class="handover-section__item">리본을 사용하는 프린터의 특성 상 조명 가까이서 촬영하거나, 흰옷을 입은 손님들의 그림자가 아주 많이 날아가는 경우가 생기므로 <span class="font-medium">인화 전 후보정 필수</span></li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">색감 조정이 필요할 때 : </p>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">Ctrl + Shift + A로(Raw필터) 색감 조정 <span class="handover-section__note">(컬러모드가 RGB가 아닌 경우 해당 필터가 작동되지 않으니 꼭 RGB 상태에서 진행)</span></li>
+                                <li class="handover-section__example-item">Ctrl+M 혹은 Ctrl+L로 명도 조정, 그림자 만들기</li>
+                                <li class="handover-section__example-item">
+                                    가장 편한 방법은 액션에서 후지흑백을 적용하는 것 <br>
+                                    &nbsp; &nbsp; <span class="handover-section__note">→ 액션 사용 시 과하게 어두워질 수 있으므로 레이어 복사 후 적용한 뒤 투명도 조절을 통해 적절한 강도 찾아주는 걸 권고</span>
+                                </li>
+                                <li class="handover-section__example-item">그레이, 베이지 기본보정은 액션에 저장해두었으니 F2, F3 단축키를 통해 사용 가능</li>
+                            </ul>
+                        </li>
+                        <li class="handover-section__item">인화지가 상당히 비싼 편. 다인원 손님이거나 인화가 밀린 경우가 아니라면 가급적 앱손프린터를 사용하는 것 추천</li>
+                        <li class="handover-section__item">프린터에 주황색 불이 들어왔을 때는 리본이나 인화지가 없다는 것이므로 갈아주어야 함. 후지 리본, 인화지 갈고 나서는 반드시 톡방에 공지하고, 업무노트에 기록하기</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- 카메라 -->
+                <div class="handover-section" id="handover3">
+                    <h1 class="font-bold handover-section__title">📸 카메라 </h1>
+                    <h2 class="font-bold handover-section__subtitle">[카메라]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">바디 모델명 : Canon EOS 5D (1세대) <span class="handover-section__note">(2025.11 기준)</span></li>
+                        <li class="handover-section__item">렌즈 모델명 : Canon EF 24-70mm f/2.8L USM (1세대) <span class="handover-section__note">(2025.11 기준)</span></li>
+                        <li class="handover-section__item">카메라에 꽂혀있는 선은 조명(맨 위 사각형), 컴퓨터연결선(회색선), 리모컨연결선(검정선)으로 세 가지</li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">
+                                사진이 찍히지 않을 때 :<br>
+                                <span class="handover-section__note">*고객님께 가장 자주 들어오는 문의임. 꼭 기억해두고 당황하지 말고 대처하기!</span>
+                            </p>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">카메라가 피사체를 인식하지 못했을 때 : 카메라에 초점이 잡혀야 사진이 찍힘. 중앙이 비어있을 경우 초점이 잡히지 않으므로 초점 확인하기</li>
+                                <li class="handover-section__example-item">리모컨 상태 확인 : 리모컨에 빨간 선이 그어져있을 경우 사진이 찍히지 않거나 셔터가 지멋대로 눌림. 살짝 눌러서 위로 올려주면 해결됨</li>
+                                <li class="handover-section__example-item">검은 화면만 나올 때 : <sup>(1)</sup>조명이 꺼져있거나, <sup>(2)</sup>조명과 연결이 끊겼거나, <sup>(3)</sup>고객님이 셔터를 너무 빨리 눌러주셨을 때 해당 현상 발생. 보통 3번의 경우가 가장 많음</li>
+                                <li class="handover-section__example-item">상태창에 에러가 뜰 때 : 카메라 전원OFF, 부스 안 콘센트 전원OFF한 뒤 다시 켜기</li>
+                                <li class="handover-section__example-item">모두 시도해봐도 안 될 경우 리모컨 혹은 연결잭이 고장난 것. 리모컨이 고장나면 리모컨셔터, 카메라셔터 모두 동작하지 않으므로 창고에서 교체하기</li>
+                            </ul>
+                        </li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">
+                                카메라가 초점을 잡지 못할 때 :<br>
+                                <span class="handover-section__note">*단순히 피체의 분산 때문이 아닌, 초점 펌핑이 일어나는 경우</span>
+                            </p>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">렌즈 쪽에 AF/MF 스위치가 있는데, AF는 자동초점, MF는 수동초점임</li>
+                                <li class="handover-section__example-item">AF(자동초점) : 초점이 맞지 않으면 사진이 찍히지 않음 → 우리는 AF모드, One Shot으로 촬영</li>
+                                <li class="handover-section__example-item">MF(수동초점) : 초점이 맞지 않아도 사진이 찍힘</li>
+                                <li class="handover-section__example-item">AF모드에서 초점 펌핑이 일어날 경우, 카메라의 AF-ON 버튼을 누른 뒤 컨트롤러 다이얼을 조작해 AF포인터를 중앙 점 하나로 설정하기</li>
+                            </ul>
+                        </li>
+                        <li class="handover-section__item">1번부스에는 흑백촬영, 2번부스에는 흑백+컬러촬영</li>
+                        <li class="handover-section__item">2번부스 기준 다이얼 C1은 증명사진, C2는 흑백사진, C3는 컬러사진</li>
+                        <li class="handover-section__item">컬러촬영 시 배경색에 맞는 WB보정과 프리셋을 적용해주어야 함.</li>
+                        <li class="handover-section__item">중간에 세팅값을 변경하게 될 경우 반드시 해당 다이얼에 '사용자 설정 저장'을 해주어야 함. 저장하지 않으면 다이얼을 돌릴 때 설정값이 초기화됨!</li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">카메라가 기울어질 때 :</p>
+                            <div class="handover-section__camera-guide">
+                                <figure class="handover-section__camera-item">
+                                    <img src="../assets/handover/camera-guide-1.jpeg" alt="카메라 수평 기준 예시 1">
+                                </figure>
+                                <figure class="handover-section__camera-item">
+                                    <img src="../assets/handover/camera-guide-2.jpeg" alt="카메라 수평 기준 예시 2">
+                                </figure>
+                                <figure class="handover-section__camera-item">
+                                    <img src="../assets/handover/camera-guide-3.jpeg" alt="카메라 수평 기준 예시 3">
+                                </figure>
+                            </div>
+                        </li>
+                    </ul>
+                    <h2 class="font-bold handover-section__subtitle">[타임랩스 카메라]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">고객님들의 촬영 장면을 타임랩스 영상으로 담는 작은 카메라</li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">타임랩스 카메라 사용법 :</p>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">타임랩스 카메라에 SD카드 삽입</li>
+                                <li class="handover-section__example-item">
+                                    셔터 버튼을 길게 꾸욱 누르면 카운트다운과 함께 타임랩스 촬영 시작 <br>
+                                    → 찰칵찰칵 소리가 계속 들려야 정상적으로 작동하고 있는 것
+                                </li>
+                                <li class="handover-section__example-item">타임랩스 종료도 마찬가지로 셔터 길게 누르기, 우측 하단에 아주 작게 Test Shot이라고 뜨면 정상적으로 촬영 완료된 것</li>
+                            </ul>
+                        </li>
+                        <li class="handover-section__item">타임랩스 어플리케이션이 작동 중이어야 타임랩스가 찍힘. 카운트다운이 주황색 원에 둘러쌓인 상태로 되면 타임랩스 아니고 그냥 사진이니 어플리케이션 적용시켜주기</li>
+                        <li class="handover-section__item">타임랩스 영상이 찍히지 않았을 경우 고객님께 양해를 구하고 전체원본파일 혹은 추가컷 서비스로 대체</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- 파일정리 -->
+                <div class="handover-section" id="handover4">
+                    <h1 class="font-bold handover-section__title">📂 파일&용량 정리 </h1>
+                    <h2 class="font-bold handover-section__subtitle">[메인컴퓨터 용량 정리]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">포토샵을 사용하며 찌꺼기 파일들이 자동저장되면서 용량을 차지하므로 이를 주기적으로 지워주어야 함.</li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <span class="font-medium handover-section__example-label">메인컴퓨터 용량 정리 방법 : </span>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">Win+R로 실행창 열기</li>
+                                <li class="handover-section__example-item">검색창에 %temp%를 입력하면 임시파일들만 모아서 보여줌</li>
+                                <li class="handover-section__example-item">파일 유형이 TMP, ICC인 것들, 빈 폴더들은 모두 삭제해도 무방</li>
+                                <li class="handover-section__example-item">바탕화면의 고클린도 한 번씩 돌려주기</li>
+                            </ul>
+                        </li>
+                        <li class="handover-section__item">내PC에서 연결된 외장하드들 용량 확인하고 주기적으로 정리해주기</li>
+                        <li class="handover-section__item">Photo1,2는 별다른 백업과정 없이 그냥 사진 적당량 삭제해주면 됨</li>
+                    </ul>
+                    <h2 class="font-bold handover-section__subtitle">[셀렉컴퓨터 용량 정리]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">1,2,3번 셀렉컴퓨터의 전체원본파일들을 모두 날짜별로 취합한 뒤 My Book으로 옮겨주는 것 <br> → 셀렉컴은 용량이 크지 않으므로 매월 1일에 해당 작업을 해주어야 함</li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <span class="font-medium handover-section__example-label">셀렉컴퓨터 용량 정리 방법 : </span>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">1번 셀렉컴의 n월 폴더를 '전체공유폴더-월별백업폴더'로 이동</li>
+                                <li class="handover-section__example-item">
+                                    2번,3번 셀렉컴의 n월 m일 폴더도 마찬가지로 월별백업폴더의 n월 m일 폴더로 이동 <br>
+                                    <span class="handover-section__note"> → EX) 3번 셀렉컴의 1월 1일에 있는 모든 개별 손님들의 폴더를 월별백업폴더의 1월 1일 폴더로 취합</span>
+                                </li>
+                                <li class="handover-section__example-item">
+                                    1,2,3번 셀렉컴퓨터의 모든 파일들이 취합되었다면, 월별백업폴더에서 'My Book-전체원본파일' 폴더로 모두 이동시키기 <br>
+                                    → My Book은 셀렉컴퓨터와 연결되어 있지 않기 때문에 이 작업은 메인컴퓨터에서 해주어야 함
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <span class="font-medium handover-section__example-label">셀렉컴퓨터 용량 정리 TIP : </span>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">Ctrl+C+V<span class="handover-section__note">(복사)</span>보다 Ctrl+X+V<span class="handover-section__note">(잘라넣기)</span>를 쓰는 게 훨씬 빠르게 옮길 수 있음</li>
+                                <li class="handover-section__example-item">2대 이상의 셀렉컴퓨터에서 동시에 옮기면 메인컴퓨터에서 렉이 심하게 걸리니 1,3,2번 순서대로 순차적으로 진행하는 걸 추천</li>
+                                <li class="handover-section__example-item">대용량의 파일을 옮기는 것이기 때문에 시간이 오래 걸림. 되도록 오픈하자 마자 진행하기</li>
+                                <li class="handover-section__example-item">특히 월별백업폴더에서 My Book으로 옮기는 데 시간이 꽤 걸리기 때문에, 19시 이후라면 명일 근무자에게 바톤터치하기</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 class="font-bold handover-section__subtitle">[타임랩스 SD카드 포맷]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">파일이 많으면 가끔 카드를 인식할 수 없다면서 타임랩스가 안 찍힘. 일주일에 한 번씩 진행하는 것 추천</li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">SD카드 포맷하는 방법 : </p>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">타임랩스카메라에 SD카드 꽂기</li>
+                                <li class="handover-section__example-item">메뉴 - 어플리케이션 - 어플리케이션 종료</li>
+                                <li class="handover-section__example-item">메뉴 - 설정 - 4번페이지 - 포맷 - 확인</li>
+                                <li class="handover-section__example-item">포맷 후 다시 메뉴 들어가서 타임랩스 어플리케이션 활성화해주기</li>
+                            </ul>
+                        </li>
+                        <li class="handover-section__item">메인컴퓨터에 SD카드를 꽂아서 영상들을 삭제하는 방법도 있지만, 그렇게 되면 영상만 지워지고 해당 영상에 연결된 데이터베이스 파일들은 그대로 남아있기 때문에 추천하지 않음</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- 포토샵 -->
+                <div class="handover-section" id="handover5">
+                    <h1 class="font-bold handover-section__title">🎨 포토샵 </h1>
+                    <h2 class="font-bold handover-section__subtitle">[자주 사용하는 도구]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">스팟 복구 브러쉬 : 주변 픽셀을 자동으로 분석해 작은 잡티나 결점을 자연스럽게 지워주는 도구</li>
+                        <li class="handover-section__item">패치도구 : 선택한 영역을 다른 부분으로 드래그해 비슷한 질감과 색으로 덮어주는 보정 도구</li>
+                        <li class="handover-section__item">크롭도구 : 이미지의 불필요한 부분을 잘라내고 원하는 구도나 비율로 화면을 재구성하는 도구</li>
+                        <li class="handover-section__item">액션 : 반복적인 작업 과정을 기록해 자동으로 재실행할 수 있게 해주는 기능 <span class="handover-section__note">(매장에서는 색감보정 단축키로 다룸)</span></li>
+                    </ul>
+                    <h2 class="font-bold handover-section__subtitle">[단축키 모음]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">화면 확대/축소 <kbd>Alt</kbd><span class="handover-section__note">(생략 가능)</span> + <kbd>마우스 스크롤</kbd></li>
+                        <li class="handover-section__item">화면 이동 <kbd>스페이스바</kbd> + <kbd>드래그</kbd></li>
+                        <li class="handover-section__item">개체 크기 조절 <kbd>Ctrl</kbd> + <kbd>T</kbd></li>
+                        <li class="handover-section__item">브러쉬 크기 조절 <kbd>[</kbd> <kbd>]</kbd></li>
+                        <li class="handover-section__item">레이어 복사 <kbd>Ctrl</kbd> + <kbd>J</kbd></li>
+                        <li class="handover-section__item">개체 복사 <kbd>Alt</kbd> + <kbd>드래그</kbd></li>
+                        <li class="handover-section__item">수평•수직 이동 <kbd>Shift</kbd> + <kbd>드래그</kbd></li>
+                        <li class="handover-section__item">선택영역 반전 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd></li>
+                        <li class="handover-section__item">선택영역 선택해제 <kbd>Ctrl</kbd> + <kbd>D</kbd></li>
+                        <li class="handover-section__item">Camear RAW filter(색감보정) <kbd class="ms-3">Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd></li>
+                        <li class="handover-section__item">픽셀유동화(얼굴보정) <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd></li>
+                        <li class="handover-section__item">저장 <kbd>Ctrl</kbd> + <kbd>S</kbd></li>
+                        <li class="handover-section__item">사본저장 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd></li>
+                        <li class="handover-section__item">웹으로저장 <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></li>
+                        <li class="handover-section__item">클리핑마스크 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd></li>
+                        <li class="handover-section__item">브러쉬 <kbd>B</kbd></li>
+                        <li class="handover-section__item">스팟복구브러쉬<kbd>J</kbd></li>
+                        <li class="handover-section__item">도형 <kbd>U</kbd></li>
+                        <li class="handover-section__item">가이드라인 숨기기/보기 <kbd>Ctrl</kbd> + <kbd>;</kbd></li>
+                        <li class="handover-section__item">이 외에도 단축키가 정말정말 많지만 근무 때에는 이정도만 알아두셔도 좋습니다!</li>
+                    </ul>
+                    <h2 class="font-bold handover-section__subtitle">[...]</h2>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">이 외의 포토샵 문제상황은 단톡방으로 문의주세요!</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- 기타 -->
+                <div class="handover-section" id="handover6">
+                    <h1 class="font-bold handover-section__title">⚙️ 기타 </h1>
+                    <ul class="font-light handover-section__list">
+                        <li class="handover-section__item">파일탐색기가 열리지 않을 때 : Ctrl + Shift + esc로 작업관리자를 켠 뒤 '윈도우탐색기' 다시 시작</li>
+                        <li class="handover-section__item">부스 안 조명에 전원이 들어오지 않을 때 : 할로겐램프 수명이 다한 것이므로 창고에서 램프 챙긴 뒤 교체하면 됨. 램프 감싸는 천 찍찍이 잠깐 떼어내고 손 넣어서 돌리고 전구 빼면 됨. <span class="font-medium">**반드시 조명 전원 끄고 교체할 것!!!! 켜고 갈면 감전당해요</span></li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">주기적으로 해주어야 하는 작업들 : </p>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">비품체크 : 종이봉투•액자, 후지리본•인화지, 명함카드, 할로겐램프, 4*6액자, A4액자, 리모컨 등 <span class="handover-section__note">(박스테이프, 건전지는 다이소에서 구매)</span></li>
+                                <li class="handover-section__example-item">비품만들기 : 종이봉투에 종이액자 끼우기, 명함카드에 클립 꽂기 등</li>
+                                <li class="handover-section__example-item">인스타그램 업로드 : 마케팅활용 동의하신 분들 인스타그램 업로드 <br> → Tip : 촬영동의서에 ‘동의합니다’ 검색하면 동의하신 분들 리스트만 뜸!</li>
+                            </ul>
+                        </li>
+                        <li class="handover-section__item">마우스 속도가 갑자기 느려졌을 떄 : 마우스 스크롤러 밑에 있는 타원형 버튼 누르기</li>
+                        <li class="handover-section__item">여름에 에어컨 틀면 창고에서 물 셈... 배관 밑에 통 놔서 물갈이 해줘야 함</li>
+                        <li class="handover-section__item handover-section__item--example">
+                            <p class="font-medium handover-section__example-label">CU포스트 잠겼을 때 : </p>
+                            <ul class="handover-section__example-list">
+                                <li class="handover-section__example-item">비밀번호를 지속적으로 틀릴 경우 계정이 잠기면서 비밀번호를 변경해야 함.</li>
+                                <li class="handover-section__example-item">
+                                    본인 인증 방법(SMS로 인증) <br>
+                                    &nbsp; 1) 통신사 : 알뜰폰 선택 → KT <br>
+                                    &nbsp; 2) 전화번호 : 010 9788 9287<br>
+                                    &nbsp; 3) 이름 : 김준휘<br>
+                                    &nbsp; 4) 주민등록번호 : 030923-3******<br>
+                                    &nbsp; → CU포스트 비밀번호 변경 시 사전 상황설명 및 단톡방 공지, 포스트잇 재부착 필수<br>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 인수인계 네비게이션 -->
+            <aside class="handover-nav">
+                <nav class="handover-nav__container">
+                    <ul class="handover-nav__list font-medium">
+                        <li class="handover-nav__title" id="handover-nav1">컴퓨터</li>
+                        <li class="handover-nav__item">메인컴퓨터</li>
+                        <li class="handover-nav__item">셀렉컴퓨터</li>
+                        <li class="handover-nav__title" id="handover-nav2">프린터</li>
+                        <li class="handover-nav__item">앱손프린터</li>
+                        <li class="handover-nav__item">후지프린터</li>
+                        <li class="handover-nav__title" id="handover-nav3">카메라</li>
+                        <li class="handover-nav__item">카메라</li>
+                        <li class="handover-nav__item">타임랩스 카메라</li>
+                        <li class="handover-nav__title" id="handover-nav4">파일&용량 정리</li>
+                        <li class="handover-nav__item">메인컴퓨터 용량 정리</li>
+                        <li class="handover-nav__item">셀렉컴퓨터 용량 정리</li>
+                        <li class="handover-nav__item">타임랩스 SD카드 포맷</li>
+                        <li class="handover-nav__title" id="handover-nav5">포토샵</li>
+                        <li class="handover-nav__item">자주 사용하는 도구</li>
+                        <li class="handover-nav__item">단축키 모음</li>
+                        <li class="handover-nav__title" id="handover-nav6">기타</li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <script src="../js/handover.js"></script>
+        <script src="../js/search.js"></script>
+
+        <div w3-include-html="../include/scroll-top.html"></div>
+        <script src="../js/scroll.js"></script>
+
+    </main>
+
+    <!-- footer include -->
+    <div w3-include-html="../include/footer.html"></div>
+    <script src="../js/include.js"></script>
+    
+</body>
+</html>

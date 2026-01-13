@@ -1,0 +1,97 @@
+/* -- search */
+
+.handover-search-toggle {
+    display: none;
+}
+
+.handover-search {
+    position: fixed;
+    right: 5%;
+    bottom: 12%;
+    z-index: 1000;
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.handover-search__input {
+    padding: 4px 8px;
+    margin-bottom: 8px;
+}
+
+.handover-search__btn {
+    background-color: var(--color-brand-primary);
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: var(--color-brand-dark);
+        transition: all 0.25s;
+    }
+}
+
+.handover-search__controls {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+
+    button {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.handover-search__count {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.is-search-hit {
+    background-color: var(--color-bg-highlight);
+    transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .handover-search-toggle {
+        display: block;
+        position: fixed;
+        right: 5%;
+        bottom: 8%;
+        z-index: 1001;
+
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: none;
+
+        background-color: var(--color-brand-primary);
+        color: #fff;
+        font-size: 16px;
+
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    // 검색창 기본 상태: 닫힘
+    .handover-search {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(10px);
+        transition: all 0.25s ease;
+    }
+
+    // 열렸을 때
+    .handover-search.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+}

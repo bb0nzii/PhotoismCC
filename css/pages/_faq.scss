@@ -1,0 +1,39 @@
+
+.faq{
+    width: 90%;
+    margin: 0 auto 120px auto;
+}
+
+
+.faq__title{
+    margin: 130px auto 30px auto;
+}
+
+.faq__desc{
+    display: block;
+    margin-top: 10px;
+    font-size: 0.4em;
+    color: gray;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+}
+
+.faq__body{
+    background-color: rgb(245, 245, 245);
+    padding-left: 20px;
+
+    &::before{
+        content: "A. ";
+        position: absolute;
+        font-weight: bold;
+    }
+
+    p{
+        padding-left: 20px;
+    }
+}

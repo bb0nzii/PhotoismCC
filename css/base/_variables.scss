@@ -1,0 +1,26 @@
+:root {
+  --color-brand-primary: #F48E8C;
+  --color-brand-dark: #2B292A;
+
+  --color-bg-example: #f6f6f6;
+  --color-bg-highlight: #ffffe0;
+
+  --color-text-muted: #808080;
+}
+
+// utilities
+.bg-primary { background-color: var(--color-brand-primary); }
+.text-primary { color: var(--color-brand-primary); }
+.bg-dark { background-color: var(--color-brand-dark); }
+.text-dark { color: var(--color-brand-dark); }
+
+
+/*
+의미가 있는 색상은 디자인 토큰으로 변수화하고,
+white나 black처럼 의미가 고정된 색상은 직접 사용해
+가독성과 유지보수의 균형을 맞췄습니다.
+
+유틸리티 클래스는 디자인 시스템이나 반복 UI가 많은 환경에서 유용하지만,
+이 프로젝트는 컴포넌트 중심 구조라서
+색상은 각 컴포넌트 내부에서 책임지도록 설계했습니다.
+*/
