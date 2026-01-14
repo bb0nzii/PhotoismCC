@@ -9,6 +9,15 @@
     <link rel="icon" type="image/png" href="./assets/logo/icon.png" sizes="196x196">
     <link rel="stylesheet" href="./css/style.css">
     <title>춘천점 인수인계 자료</title>
+
+    <script type="module">
+        import { checkAuth } from "../js/auth.js";
+
+        if (!checkAuth()) {
+            location.href = "./pages/login.html";
+        }
+    </script>
+
 </head>
 <body>
 <div class="home">
