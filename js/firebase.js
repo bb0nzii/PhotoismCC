@@ -2,7 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-// 🔥 Firebase 콘솔에서 복사한 config
+// config
 const firebaseConfig = {
   apiKey: "AIzaSyDHJnSqCFQXVe65iUxuQ1mIRHPhydSXahI",
   authDomain: "photoism-bbs.firebaseapp.com",
