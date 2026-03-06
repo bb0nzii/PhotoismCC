@@ -14,7 +14,8 @@
         import { checkAuth } from "../js/auth.js";
 
         if (!checkAuth()) {
-            location.href = "./login.html";
+            sessionStorage.setItem("redirectAfterLogin", location.pathname);
+            location.href = "login.html";
         }
     </script>
 

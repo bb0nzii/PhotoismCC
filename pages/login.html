@@ -21,16 +21,41 @@
     <script type="module">
         import { loginWithPassword } from "../js/auth.js";
 
-        document.getElementById("login-btn").addEventListener("click", async () => {
-            const pw = document.getElementById("password").value;
+        const passwordInput = document.getElementById("password");
+        const loginBtn = document.getElementById("login-btn");
 
-            const ok = await loginWithPassword(pw);
-            if (ok) {
-            location.href = "../index.html";
+        async function login() {
+        const pw = passwordInput.value;
+
+        const ok = await loginWithPassword(pw);
+
+        if (ok) {
+            const redirect = sessionStorage.getItem("redirectAfterLogin");
+
+            if (redirect) {
+            sessionStorage.removeItem("redirectAfterLogin");
+            location.href = redirect;
             } else {
-            alert("비밀번호가 틀렸습니다");
+            location.href = "../index.html";
             }
+
+        } else {
+            alert("비밀번호가 틀렸습니다");
+        }
+        }
+
+        // 버튼 클릭
+        loginBtn.addEventListener("click", login);
+
+        // 엔터 로그인
+        passwordInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            login();
+        }
         });
+
+        // 자동 포커스
+        passwordInput.focus();
     </script>
 </body>
 </html>
